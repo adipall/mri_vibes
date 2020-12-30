@@ -1,0 +1,35 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: simpleStatics
+	Title: untitled
+Current date, time: Tue Dec 29, 2020, 19:55:47
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  cube.e
+
+  Block ID   Block Name     Topology     Num Elem   Type    Material   Quality    
+  --------   ----------   ------------   --------   -----   --------   --------   
+  1          block_1      HEXAHEDRON_8   64         Hex8b   1          0.125000   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            nodelist_1     25         
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+  1            surface_1      16         
+  2            surface_2      16         
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Using 'auto' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:00
