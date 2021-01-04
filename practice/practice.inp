@@ -10,7 +10,7 @@ BOUNDARY
 END
 LOADS
     nodeset 1
-    pressure = 1e6
+    load = 10
 END
 BLOCK 1
     material 1
