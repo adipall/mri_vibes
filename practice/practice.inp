@@ -2,15 +2,29 @@ FILE
     geometry_file = ring_r4.e
 END
 SOLUTION
-    statics
+    case dfrf
+    directfrf
 END
 BOUNDARY
     nodeset 2
         fixed
 END
 LOADS
-    nodeset 1
-    load = 10
+    sideset 1
+    function 2
+    pressure = 1e6
+END
+FREQUENCY
+    freq_min 0
+    freq_max 5700
+    freq_step 10
+    block all
+    disp
+END
+FUNCTION 2
+    type inear 
+    data 0 0 
+    data 0 1
 END
 BLOCK 1
     material 1
