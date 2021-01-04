@@ -2,7 +2,7 @@ FILE
     geometry_file = ring_r4.e
 END
 SOLUTION
-    static
+    statics
 END
 BOUNDARY
     nodeset 2
