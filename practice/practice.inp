@@ -1,0 +1,27 @@
+FILE
+    geometry_file = cube.e
+END
+SOLUTION
+    statics
+END
+BOUNDARY
+    sideset 1
+        fixed
+END
+LOADS
+    sideset 2
+    pressure = 1e6
+END
+BLOCK 1
+    material 1
+END
+MATERIAL 1
+    E 200e9
+    nu 0.3
+    density 7850
+END
+OUTPUTS
+    disp
+END
+ECHO
+END
