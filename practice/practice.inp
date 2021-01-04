@@ -1,15 +1,15 @@
 FILE
-    geometry_file = cube.e
+    geometry_file = ring_r4.e
 END
 SOLUTION
-    statics
+    static
 END
 BOUNDARY
-    sideset 1
+    nodeset 2
         fixed
 END
 LOADS
-    sideset 2
+    nodeset 1
     pressure = 1e6
 END
 BLOCK 1
