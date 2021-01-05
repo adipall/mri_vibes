@@ -32,7 +32,7 @@ END
 MATERIAL 1
     E 2e9
     nu 0.35
-    density 7850
+    density 1052
 END
 OUTPUTS
     disp
