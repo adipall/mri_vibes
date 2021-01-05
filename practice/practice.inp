@@ -22,7 +22,7 @@ FREQUENCY
     disp
 END
 FUNCTION 2
-    type inear 
+    type linear 
     data 0 0 
     data 0 1
 END
@@ -30,8 +30,8 @@ BLOCK 1
     material 1
 END
 MATERIAL 1
-    E 200e9
-    nu 0.3
+    E 2e9
+    nu 0.35
     density 7850
 END
 OUTPUTS
