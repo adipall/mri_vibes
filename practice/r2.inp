@@ -1,18 +1,18 @@
 FILE
-    geometry_file = ring_r0.e
+    geometry_file = ring_r2.e
 END
 SOLUTION
     case dfrf
     directfrf
 END
 BOUNDARY
-    nodeset 2
+    sideset 2
         fixed
 END
 LOADS
     sideset 1
     function 2
-    pressure = 1e6
+    pressure = 1.8637e3
 END
 FREQUENCY
     freq_min 0
@@ -27,7 +27,7 @@ FUNCTION 2
     data 0 1
 END
 BLOCK 1
-    material 1
+    material 2
 END
 
 MATERIAL 1 //abs
