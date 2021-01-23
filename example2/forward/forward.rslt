@@ -1,0 +1,66 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward
+	Title: untitled
+Current date, time: Thu Oct 29, 2020, 19:34:52
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  beam.e
+
+  Block ID   Block Name     Topology     Num Elem   Type    Material   Quality    
+  --------   ----------   ------------   --------   -----   --------   --------   
+  1          block_1      HEXAHEDRON_8   1188       Hex8b   1          0.125421   
+  2          block_2      HEXAHEDRON_8   1188       Hex8b   2          0.125421   
+  11         block_11     HEXAHEDRON_8   216        Hex8b   11         0.125000   
+  12         block_12     HEXAHEDRON_8   216        Hex8b   12         0.125000   
+  13         block_13     HEXAHEDRON_8   216        Hex8b   13         0.125000   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  10           nodelist_10    203        
+  11           nodelist_11    343        
+  12           nodelist_12    343        
+  13           nodelist_13    343        
+  20           nodelist_20    551        
+  500          nodelist_500   3857       
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+  1            surface_1      108        
+  2            surface_2      108        
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |          8.7 |          8.7
+        mass |            8 |            8
+There are no negative diagonal entries.
+     Dynamic |          8.7 |          8.7
+Using 'auto' solver.
+Eigenvalues:
+1: 41464.9	(32.4086)
+2: 252441	(79.9649)
+3: 380251	(98.1421)
+4: 1.20013e+06	(174.355)
+5: 2.56139e+06	(254.717)
+6: 3.03392e+06	(277.218)
+7: 3.55408e+06	(300.043)
+8: 6.72497e+06	(412.729)
+9: 9.10579e+06	(480.263)
+10: 1.10304e+07	(528.585)
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:09
