@@ -1,0 +1,89 @@
+SOLUTION
+    solver=gdsw
+        statics
+        nmodes 5
+	title 'small tet4 beam model. statics'
+	lumped
+END
+
+FILE
+        NUMRAID 1 1
+	geometry_file	'temp%1d/tet4_small.par.6.%.1d'
+END
+
+BOUNDARY
+    nodeset 1 // nodes on the left side of the beam
+    x = 0
+    y = 0
+    z = 0
+END
+
+LOADS
+        nodeset 2
+        force = 0 .25 0
+END
+
+OUTPUTS
+
+//	maa
+//	kaa
+//	faa
+	fetimap
+	deform
+//	stress
+//	strain
+     warninglevel 0
+     mfile
+END
+
+ECHO
+//  MATERIALS
+//  ELEMENTS
+//  JACOBIAN
+//  ALL_JACOBIANS
+//  TIMING
+//  MESH
+//  INPUT
+//  NODES
+//  FETI_INPUT
+//  DISP
+//  STRAIN
+//  STRESS
+//  ALL
+ // mass
+none
+END
+
+
+
+BLOCK 1
+	material 2
+        tet4
+END
+
+
+Material 2
+	name 'Steel'
+	E 2.07e11
+	nu 0.3
+	density 7798
+END
+
+FETI
+    rbm                   geometric
+    preconditioner        dirichlet
+    corner_algorithm      3
+    corner_dimensionality 6
+    corner_augmentation   none
+    max_iter              500
+    orthog                500
+    solver_tol            1e-6
+    grbm_tol              5e-5
+    coarse_solver         sparse
+    local_solver          sparse
+    precondition_solver   single_sparse
+    prt_summary           no
+    prt_rbm               no
+    prt_debug             2
+END
+

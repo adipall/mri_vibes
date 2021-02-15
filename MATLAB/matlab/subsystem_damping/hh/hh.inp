@@ -1,0 +1,146 @@
+// Test for iwan distributing damping.
+
+SOLUTION
+    solver=gdsw
+	eigen
+	nmodes 1
+	title 'first test of eigen'
+END
+
+FILE
+        NUMRAID
+	geometry_file	'hh.exo'
+END
+
+//parameters
+//  tangentmethod=difference
+//end
+
+BOUNDARY
+    nodeset 1
+    	fixed
+	nodeset 2
+		z = 0
+END
+
+//LOAD preload
+//    body
+//       gravity 0 9.8e6 0
+//end
+
+LOADS
+//    nodeset 2
+//      force 0 1 0
+//      scale 1e3
+//      function 2
+END
+
+//FUNCTION 2
+//  type LINEAR
+//  name "test_func1"
+//  data 0.0 0.0
+//  data 1.0e-4 1.0
+//  data 2.0e-4 0.0
+//  data 1.0 0.0
+//END
+
+OUTPUTS
+	mfile
+//	maa
+//	kaa
+//	faa
+//	force
+//	fetimap
+	deform
+//	stress
+//	strain
+END
+
+ECHO
+//  MATERIALS     
+//  ELEMENTS      
+//  JACOBIAN      
+//  ALL_JACOBIANS 
+//  TIMING        
+//  MESH          
+  INPUT         
+//  NODES
+//  FETI_INPUT
+//  DISP
+//  STRAIN
+//  STRESS
+//  ALL
+//  mass
+//  force
+// none
+END	
+
+
+
+BLOCK 2
+	material 1
+    //   nonlinear no
+END
+
+BLOCK 1
+	material 1
+    //    nonlinear no
+END
+
+
+////////////////////////////////////////////////////////////
+
+Material 1
+	name 'Aluminum'
+	E 10.0E6
+	nu 0.33
+	density 253.82e-6
+END
+
+MATERIAL 3
+        ISOTROPIC_VISCOELASTIC
+        name "epoxy"
+        T_0=0
+        T_current=0
+        C_1=1
+        C_2=2
+        K_g 4.8E+9
+        K_inf 3.1E+9
+        G_g 0.8E+9
+        G_inf 2.6E6
+        K_coeff  0.  0.    1.96454E-02    1.67398E-02  0.    2.77897E-02  0.    3.10672E-02 0.    4.17637E-02  0.    5.29466E-02  0.    7.62863E-02    7.84127E-02    1.02427E-01 0.124201   0.110332   0.116724    1.03105E-01    4.96929E-02    2.52022E-02 1.70294E-02    1.91593E-03    2.83192E-03    2.22634E-04    9.46572E-04 1.55402E-04    5.55637E-04    7.09103E-06
+        K_relax 1.00000E-10    1.00000E-09    1.00000E-08    1.00000E-07    3.16228E-07 1.00000E-06    3.16228E-06    1.00000E-05    3.16228E-05    1.00000E-04 3.16228E-04    1.00000E-03    3.16228E-03    1.00000E-02    3.16228E-02 1.00000E-01   0.316228    1.00000    2.51189    6.30957    15.8489    39.8107 100.0000    316.228   1000.000    3162.28   10000.00    31622.8   100000.0 316228.
+        G_coeff  0.  0.    1.96454E-02    1.67398E-02  0.    2.77897E-02  0.    3.10672E-02 0.    4.17637E-02  0.    5.29466E-02  0.    7.62863E-02    7.84127E-02    1.02427E-01 0.124201   0.110332   0.116724    1.03105E-01    4.96929E-02    2.52022E-02 1.70294E-02    1.91593E-03    2.83192E-03    2.22634E-04    9.46572E-04 1.55402E-04    5.55637E-04    7.09103E-06
+        G_relax 1.00000E-10    1.00000E-09    1.00000E-08    1.00000E-07    3.16228E-07 1.00000E-06    3.16228E-06    1.00000E-05    3.16228E-05    1.00000E-04 3.16228E-04    1.00000E-03    3.16228E-03    1.00000E-02    3.16228E-02 1.00000E-01   0.316228    1.00000    2.51189    6.30957    15.8489    39.8107 100.0000    316.228   1000.000    3162.28   10000.00    31622.8   100000.0 316228.
+        density .288
+END
+
+// optional feti section. ignored in serial.
+FETI
+    rbm			  geometric
+    scaling		  no
+    preconditioner	  dirichlet
+    solver_tol		  1e-9 // Convergence tolerance
+    orthog		  1000 // Lower to reduce memory
+    rbm_tol_mech	  1e-8 // Local RBM tolerance
+    local_solver	  sparse
+    coarse_solver	  sparse
+    precondition_solver	  sparse
+    grbm_tol		  1e-6 // Global RBM tolerance
+    corner_algorithm	  3    // 1, 5-8, 14
+    corner_dimensionality 6    // 6 for shell-like models
+    corner_augmentation	  none // or edge
+    prt_summary		  no   // Local RBMs
+    prt_rbm		  yes  // Local RBMs
+    prt_debug		  1
+    // bailout		  // select to continue past fatal errors
+                          // specific to feti-dp
+END
+
+CLOP
+  solver_tol = 1e-10
+  max_iter=200
+  orthog=200
+  prt_summary=1
+  prt_debug=1
+END

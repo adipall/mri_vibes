@@ -1,0 +1,24 @@
+distributed analysis set example: 6 subdomains
+To reproduce the files tet4_small_statics_gid_*.m FetiMap_a_*.m Rhs_*.m
+assign -p Salinas_rtest/test_tool/fast_regression_tests/tet4/tet4_small_statics.test -a id=tet4_small_statics.np6_gdsw
+
+The files aset_*.m and gset_*.m ... were created by other methods.
+
+
+
+
+
+gid abbreviates global_id, 1 <= gid <= 24,
+a set: 3 directions/node,  48
+3 directions/node
+gid length: 8 7 7 7 8 7
+
+fe_vector length: 24 18 9 21 24 21
+
+subdomain   nodes
+0        5,8-13,16
+1        2,5-8,10,11
+2        1:5,7,8
+3        13,14,16:20
+4        21:24,17:20
+5        10,11,13:16,19

@@ -1,0 +1,5 @@
+
+subdomain adjacency overlap information
+
+
+Salinas_rtest/test_tool/fast_regression_tests/multi-element/olio_eigen.test -m 3 -a solver=gdsw

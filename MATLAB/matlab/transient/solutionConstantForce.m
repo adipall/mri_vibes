@@ -1,0 +1,12 @@
+%SOLUTIONCONSTANTFORCE function [u,v] =
+function [u,v] = solutionConstantForce(m,c,k,uf,n,tf)
+d=.5*c/m;
+omega=sqrt((k/m)-d*d);
+time = linspace(0,tf,n);
+decay  = exp( -d*time );
+cosine = cos( omega * time );
+sine   = sin( omega * time );
+b = d/omega;
+eine = ones(1,n);
+u = (eine-decay.*(cosine+sine*b))*uf;
+v=(decay.*sine)*(k*uf/(m*omega));

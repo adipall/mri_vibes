@@ -1,0 +1,29 @@
+% function [d,v,a]=generalizedAlpha(n,tf,m,c,k,rampRate,rho,uo,vo)
+% todo: accomodate impulsize force
+function [d,v,a]=generalizedAlpha(n,tf,m,c,k,rampRate,rho,uo,vo)
+t = 0;
+fo= rampedForce(k,rampRate,t);
+ao = (fo-c*vo -k*uo)/m;
+d = zeros(1,n);
+v = zeros(1,n);
+a = zeros(1,n);
+d(1) = uo;
+v(1) = vo;
+a(1) = ao;
+[alphaF,alphaM,newmarkBeta,newmarkGamma]=generalizedAlphaParameters(rho);
+time = linspace(0,tf,n);
+h = time(2);
+matrix=newmarkBeta*h*h*(1-alphaF)*k+(1-alphaF)*newmarkGamma*h*c+(1-alphaM)*m;
+for level=1:n-1,
+    t=(1-alphaF)*time(level+1)+alphaF*time(level);
+    f=rampedForce(k,rampRate,t);
+    vp=v(level)+h*a(level);
+    vv = v(level)*alphaF + vp*(1-alphaF);
+    dp=d(level)+h*v(level)+.5*h*h*a(level);
+    dd = d(level)*alphaF + dp*(1-alphaF);
+    rhs=f-m*a(level)-c*vv-k*dd;
+    aUpdate=rhs/matrix;
+    a(level+1)=a(level)+aUpdate;
+    v(level+1)= vp + newmarkGamma*h*aUpdate;
+    d(level+1) = dp + newmarkBeta*h*h*aUpdate;
+end

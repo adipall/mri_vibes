@@ -1,0 +1,103 @@
+
+// Contents of Solution.
+solution
+	//dump
+    eigen nmodes=30
+    // statics
+    // restart=auto
+    // transient time_step=? nsteps=30 nskip=1
+    
+    //transient
+    //time_step = 5e-6
+    //nsteps = 4000
+    //solver = gdsw
+    //rho = 0.9
+end
+
+// Contents of Damping.
+damping
+    alpha 0.5
+    beta 6.3E-6
+    
+end
+
+file
+    geometry_file 'beam.g'
+    numraid = 1
+end
+
+// Contents of Boundary.
+boundary
+end
+
+// Functions for conditions
+
+// Contents of Outputs.
+outputs
+    maa
+    kaa
+    // faa
+    elemqualchecks on
+    disp
+    // velocity
+    // acceleration
+     stress
+    // strain
+    // energy
+    genergies
+    // nodalstress
+    // harwellboeing
+    // mfile // if not selected, no matlab files written
+    // locations
+    // force // outputs applied forces
+    // warninglevel 1
+end
+
+// Contents of Echo.
+echo
+    // materials
+    // elements
+    // jacobian
+    // all_jacobians
+     timing
+     mesh
+    // input
+    // nodes
+    // subdomains '0'
+    mass
+    // feti_input
+    // disp
+    // velocity
+    // acceleration
+    // force
+    // stress
+    // strain
+    // energy
+    // all
+    // mpc
+    // none
+end
+
+
+// - Block id 2 had name MassMock
+block 1
+    material 1
+end
+
+// Material Al6061-T652
+material 1
+    isotropic
+    name "Al6061-T652"
+    density = 0.0002536
+    nu = 0.33
+    E = 9.9e6
+end
+
+// Material steel
+material 2
+    isotropic
+    name "steel"
+    density = 0.000735
+    nu = 0.29
+    E = 30e6
+end

@@ -1,0 +1,87 @@
+solution
+ case 'eig'
+  eigen
+  shift = -1e6
+  nmodes = 20
+ case 'frfx'
+  modalfrf
+  lfcutoff -10
+  load 10
+end
+
+file
+ geometry_file = 'simple.exo'
+end
+
+
+material 1
+ E = 10e6
+ nu = .3
+ density = .0975
+end
+
+block 1
+ material 1
+end
+
+block 2 
+ material 1
+end
+
+block 500
+ conmass
+ mass 1e6
+ Ixx 1e7
+ Iyy 1e7
+ Izz 1e7
+end
+
+// virtual?
+block 100
+ rbar
+end
+
+parameters
+ wtmass = .002588
+end
+
+block 201
+ joint2g
+ kx = elastic 1e6
+ ky = elastic 1e6
+ kz = elastic 1e6
+ krx = elastic 1e7
+ kry = elastic 1e7
+ krz = elastic 1e7
+end
+
+boundary
+ //none
+end
+
+outputs
+ disp
+end
+
+echo
+ mass
+end
+
+load 10
+ nodeset 500
+ force 1.0 0.0 0.0
+ scale 1e6
+end
+
+frequency
+ freq_min = 10
+ freq_max = 4000
+ freq_step = 10
+ block 201
+ acceleration
+ disp
+end
+
+damping
+ gamma .02
+end

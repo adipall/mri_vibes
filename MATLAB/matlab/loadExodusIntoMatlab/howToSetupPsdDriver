@@ -1,0 +1,7 @@
+$ ln -s ../code/bin/linux-gcc-4.7.2/debug/salinas
+$ ./salinas frf.inp 
+$ cp simple-frfx.frq ../.
+$ cd ..
+$ matlab
+% addpath ../loadExodusIntoMatlab
+% psd_driver

@@ -1,0 +1,7 @@
+
+Currently this folder contains a specific example used in a software development task.
+
+
+assign -p Salinas_rtest/test_tool/fast_regression_tests/traction_beam_hex8.test -a id=beam_hex8.np4_gdsw
+In order to use this example, SierraSD must be modified to write to m-files: match list size, match list, owner
+input to swap vectors in the case of a force vector: force_vector, nodal_sum, displacement_vector

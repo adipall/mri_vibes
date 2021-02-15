@@ -1,0 +1,75 @@
+// This is a simple follower load example. It uses a 1/R type loading, but the
+// direction of the loading is not changing. The model is a simple bar built
+// of volume elements. Loading is purely axial, and simply compresses the bar.
+
+SOLUTION
+    solver=gdsw
+	eigen
+	nmodes 2
+	title 'first test of eigen'
+END
+
+FILE
+   geometry_file 'onehex.exo'
+//   NUMRAID 
+END
+
+parameters
+	wtmass 0.00259
+end
+
+damping
+end
+
+BOUNDARY
+  sideset 2
+    x=0 y=0 z=0
+END
+
+
+OUTPUTS
+//      maa
+//      kaa
+//      faa
+       elemqualchecks off
+        disp
+//      velocity
+//      acceleration
+        stress
+//      strain
+//      energy
+//      nodalstress
+//      harwellboeing
+      mfile   // if not selected, no matlab files written 
+//      locations
+      force        // outputs applied forces
+//      warninglevel 1
+END
+
+ECHO
+//  input
+ disp
+    timing
+	nlresidual
+END
+
+FETI
+   corner_algorithm 9
+//   solver_tol 1.0e-12
+ //  preconditioner dirichlet
+ //  corner_augmentation edge
+END
+
+BLOCK 1
+    Hex8
+    material 3
+END
+
+MATERIAL 3
+	isotropic
+    name "steel"
+    density = 0.000735
+    nu = 0.29
+    E = 30e6
+END
+

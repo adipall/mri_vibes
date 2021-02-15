@@ -1,0 +1,30 @@
+% Using recent Matlab features:
+>> pwd
+.../code/Salinas/tools/matlab
+>> FESearch.test1
+>> testCase = FESearch.SearchTest
+>> run(testCase),
+>> testCase = ShapeFnc.ElementTest
+>> run(testCase),
+>> testCase = FEMesh.MeshTest
+>> run(testCase),
+
+
+% Sister repository
+Department 1523 maintains a repository of Matlab utilility functions at
+https://user_name@code-source.sandia.gov/git/ExodusUtilities1523/
+That repository has a few files from Salinas/tools/matlab.
+Salinas/tools/matlab repository has duplicated many files from ExodusUtilities1523.
+
+
+% Documentation:  
+$/docs/SalinasDocuments/Matlab_programming_I.pptx   author:Todd S., Date: 9/2012
+
+
+
+FEMesh.icosahedron;
+elementType = 'Tri3';
+fexo = FEMesh.Exodus( elementType, obj.connectivity, obj.coordinates );
+fexo.Title = 'Icosahedron';
+fexo.Filename = 'sphere.g';
+exo_put(filename,fexo);

@@ -1,0 +1,9 @@
+Compare
+code/Salinas/salinas.h
+i.e.
+../../../../salinas.h
+Here G-set and A-set are used in the sense of Nastran.
+fetimap converts the G-set to the A-set.
+In other words, the fetimap is a vector of the A-set ids in the G-set.
+The right-hand side is the equation number (in the A-set).
+The lhs index is 8*(node index)+coordinate (i.e. the G-set,  0 <= coordinate < dof_per_node) 

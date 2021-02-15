@@ -1,0 +1,40 @@
+To do the matlab integration
+
+- salinas abc.inp
+- nem_join eigen results if needed
+- exo2mat vtube-eig.exo
+- mv ModalFv.m fv.m
+- vi func1.m
+- matlab
+load vtube-eig
+%load the modal (or generalized forces)
+fv
+
+% set output locations
+nvars=[nvar01' nvar02' nvar03']';
+evars=0;
+
+% set integration parameters
+dt=0.0001;
+nsteps=2000;
+
+% set force, time functions
+modalforce=ModalFv(1,:)';
+timefunc='func1';
+
+% gvar02 contains frequencies. I don't like the name
+freq=gvar02;
+
+%set modal damping. This would also include proportional damping
+cdamp=ones(size(freq))*0.01;
+
+% integrate through time
+x=modaltran(dt,nsteps,modalforce,timefunc,freq,cdamp, nvars, evars);
+
+% plot results
+t=(1:nsteps)*dt;
+plot(t,x);
+
+
+
+

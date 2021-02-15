@@ -1,0 +1,7 @@
+Old and New Style Parameters Created for Todd on 25-Mar-2009
+chi = -0.802
+beta =  0.498
+K_T = 2.97e+006
+phi_max = 7.6e-008
+R = 1.01e+007
+S = 9.88e+005

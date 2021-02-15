@@ -1,0 +1,35 @@
+   I've been working through the changes to be able to do the modal 
+integration in matlab. I think the pieces are in place.
+
+   You would need to run Salinas with a modaltransient method in order to 
+output the modal forces. One force will be output for each load 
+definition, i.e. if you have two "nodesets" in the loads section, each 
+will generate a generalized force. There is also a generalized force 
+generated for the static load contribution -- this should be ignored in 
+matlab, as it is in Salinas.
+
+   A matlab function would also need to be defined for each of the time 
+functions in Salinas. I'm not a real expert in matlab. The current code 
+passes in the function by name (as text) and uses 'eval' to evaluate at 
+each time. Ideally we would pass in an array of such functions.
+
+   All the output locations and element quantities must be defined in the 
+history block.
+
+   The rest of the instructions are in the attached text file, and the 
+attached matlab file. I'd like feedback on the approach.
+
+
+Comments:
+   - When the entire model is output, Salinas is faster. duh.
+   - I haven't check the speed for big models, small output.
+   - This has been thoroughly checked out and debugged on one and two 
+     processors of our vtube example. (yeah right).
+   - comparisons of both serial and parallel calculations with this 
+     approach on one example were good. Clearly we need more tests.
+   - Seems that most of the steps could be automated easily.
+   - I still have to do a bit of cleanup, especially with respect to book 
+     keeping of the functions.
+   - The integrator is standard Newmark-Beta, without rho. That is 
+     consistent with Salinas' modaltransient. The rho damping could be
+     easily added if need be.

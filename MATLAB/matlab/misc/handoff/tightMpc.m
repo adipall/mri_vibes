@@ -1,0 +1,19 @@
+function [tightMpcVector,tightMpcOrder]=tightMpc(mpcVector,mpcOrder)
+%[tightMpcVector,tightMpcOrder]=tightMpc(mpcVector,mpcOrder)
+threshold=1.e-8;
+numMpc=size(mpcOrder,1)/3;
+tightMpcOrder=zeros(numMpc,1);
+os=0;
+ot=0;
+for k=1:numMpc,
+    n=mpcOrder(3*k-2);
+    node = mpcVector(os+1:os+n,1);
+    weight=mpcVector(os+1:os+n,3);
+    os=os+3*n;
+    [active,~]=find(abs(weight)>threshold);
+    tightMpcOrder(k)=size(active,1);
+    m=tightMpcOrder(k);
+    tightMpcVector(ot+1:ot+m,1) = node(active);
+    tightMpcVector(ot+1:ot+m,2)=weight(active);
+    ot=ot+m;
+end

@@ -1,0 +1,21 @@
+clear
+numberSubdomains = 3;
+subdomain = 1;
+assert( 0<number_blocks && number_blocks < 10 ); 
+%dist = cell(numberSubdomains3,1);
+act = 'load p';
+suffix = int2str(subdomain-1);
+
+   myAssign = [act,root,int2str(i)];
+root = 'blks0';
+prefix = 'dist{';
+
+aBlock=';
+assert( 0<number_blocks && number_blocks < 10 ); 
+
+for i = 1:number_blocks, % 1 <= number_blocks <= 9 
+   myAssign = [act,root,int2str(i)];
+   eval(myAssign);
+   hi = aBlock,
+end
+
