@@ -15,11 +15,13 @@ FREQUENCY
     disp
 END
 BOUNDARY
-    sideset 1
+    nodeset 1
+		fixed
+	sideset 1
 		fixed
 END
 LOADS
-    sideset 1
+    nodeset 1
 		function 2
 		pressure = 1e6
 END
