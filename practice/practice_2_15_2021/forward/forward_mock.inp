@@ -13,19 +13,24 @@ FREQUENCY
     freq_step 10
     block all
     disp
+    acceleration
 END
 BOUNDARY
+    //nodeset 1
+		//fixed
+   // sideset 1
+		//fixed
     nodeset 1
-		fixed
-	sideset 1
-		fixed
+    		accelz = 357 //average of mock data accelerations
+    		function=1
+    		
 END
 LOADS
-    nodeset 1
-		function 2
-		pressure = 1e6
+   // nodeset 1
+		//function 2
+		//pressure = 1e6
 END
-FUNCTION 2
+FUNCTION 1
     type linear
     data 0 0
     data 0 1
