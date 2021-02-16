@@ -16,19 +16,13 @@ FREQUENCY
     acceleration
 END
 BOUNDARY
-    //nodeset 1
-		//fixed
-   // sideset 1
-		//fixed
     nodeset 1
     		accelz = 357 //average of mock data accelerations
     		function=1
     		
 END
 LOADS
-   // nodeset 1
-		//function 2
-		//pressure = 1e6
+
 END
 FUNCTION 1
     type linear
@@ -38,16 +32,16 @@ END
 BLOCK 1
     material 1
 END
-BLOCK 2
+$$ BLOCK 2
     material 2
 END
-BLOCK 11
+$$ BLOCK 11
     material 11
 END
-BLOCK 12
+$$ BLOCK 12
     material 12
 END
-BLOCK 13
+$$ BLOCK 13
     material 13
 END
 MATERIAL 1
@@ -55,22 +49,22 @@ MATERIAL 1
     nu 0.3
     density 7850
 END
-MATERIAL 2
+$$ MATERIAL 2
     E 200e9
     nu 0.3
     density 7850
 END
-MATERIAL 11
+$$ MATERIAL 11
     E 200e9
     nu 0.3
     density 7850
 END
-MATERIAL 12
+$$ MATERIAL 12
     E 200e9
     nu 0.3
     density 7850
 END
-MATERIAL 13
+$$ MATERIAL 13
     E 200e9
     nu 0.3
     density 7850
