@@ -17,7 +17,7 @@ FREQUENCY
 END
 BOUNDARY
     nodeset 1
-		accelx = 357 //average of mock data accelerations
+		accelZ = 357 //average of mock data accelerations
 		function=1
 		disp0 = 0.0
 		vel0 = 0.0
