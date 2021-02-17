@@ -20,11 +20,12 @@ BOUNDARY
 		accelz = 357 //average of mock data accelerations
 		function=1
 		disp0 = 0.0
-		vel0 = 0.1
+		vel0 = 0.0
     		
 END
 LOADS
-
+	nodeset 1
+		function=1
 END
 FUNCTION 1
     type linear
