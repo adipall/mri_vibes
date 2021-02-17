@@ -14,7 +14,7 @@ srate = 6400;                   % samplingrate
 tfull = (0:(1/srate):10)';      % orignal time of signal
 htloc = length(tfull)/2;        % index of half time
 t = tfull(1:htloc);             % half time of signal
-cf = 1.02e-4;                   % conversion factor V/(m/s^2)
+cf = 1.02e-2;                   % conversion factor V/(m/s^2)
 
 % output set-up
 a_amp = zeros(len,1);
