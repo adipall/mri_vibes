@@ -28,8 +28,8 @@ LOADS
 END
 FUNCTION 1
     type linear
-    data 0 0
-    data 0 1
+    #data 0 0
+    #data 0 1
 END
 BLOCK 1
     material 1
