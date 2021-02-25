@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_static_02
 	Title: untitled
-Current date, time: Thu Feb 25, 2021, 05:28:30
+Current date, time: Thu Feb 25, 2021, 19:46:24
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -33,4 +33,4 @@ Input mesh:
 we found 0 local rigid link constraint equations.
 Using 'auto' solver.
 ================================================================================
-Salinas Complete. 0 Warnings. Elapsed time: 0:00:01
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:02
