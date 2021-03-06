@@ -1,18 +1,30 @@
 FILE
     geometry_file = 'basemodel_hooks_4.e'
 END
+
 SOLUTION
-    statics
+    //case getModes
+      //  eigen
+    case dfrf
+        directfrf
+END
+FREQUENCY
+    freq_min 5700
+    freq_max 5800
+    freq_step 10
+    block all
+    disp
+    //acceleration
 END
 BOUNDARY
     nodeset 1
-    	fixed    		
+	accelZ = 357 //average of mock data accelerations
+	function 1
+	//disp0 = 0.0
+	//vel0 = 0.0
+    		
 END
 LOADS
-	nodeset 2
-	force = 0. 0. 1.0
-	scale = 1e9
-	function =1
 END
 FUNCTION 1
     type linear
