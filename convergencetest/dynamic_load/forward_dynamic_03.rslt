@@ -34,3 +34,5 @@ Input mesh:
 we found 0 local rigid link constraint equations.
 Minimum Mass Eigenvalue: 0
 Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:01:10
