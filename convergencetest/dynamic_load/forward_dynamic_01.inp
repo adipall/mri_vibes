@@ -9,22 +9,22 @@ SOLUTION
         directfrf
 END
 FREQUENCY
-    freq_min 5700
-    freq_max 5800
-    freq_step 10
+    freq_min 100
+    freq_max 500
+    freq_step 50
     block all
     disp
     //acceleration
 END
 BOUNDARY
     nodeset 1
-	accelZ = 357 //average of mock data accelerations
-	function 1
-	//disp0 = 0.0
-	//vel0 = 0.0
-    		
+        fixed		
 END
 LOADS
+    nodeset 2
+	    force = 0. 1.0 0.
+	    scale = 1e9
+	    function =1
 END
 FUNCTION 1
     type linear
