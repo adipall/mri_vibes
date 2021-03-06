@@ -1,5 +1,5 @@
 FILE
-    geometry_file = 'basemodel_hooks.e'
+    geometry_file = 'basemodel_hooks_5.e'
 END
 
 SOLUTION
