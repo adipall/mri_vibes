@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_dynamic_07
 	Title: untitled
-Current date, time: Tue Mar 9, 2021, 03:24:26
+Current date, time: Thu Mar 11, 2021, 16:46:10
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -35,4 +35,4 @@ we found 0 local rigid link constraint equations.
 Minimum Mass Eigenvalue: 0
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 0 Warnings. Elapsed time: 0:13:41
+Salinas Complete. 0 Warnings. Elapsed time: 0:13:43
