@@ -23,7 +23,7 @@ END
 LOADS
     nodeset 2
 	    force = 0. 1.0 0.
-	    scale = 1e9
+	    scale = 100.
 	    function =1
 END
 FUNCTION 1
