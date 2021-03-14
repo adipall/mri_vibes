@@ -9,16 +9,16 @@ SOLUTION
         directfrf
 END
 FREQUENCY
-    freq_min 5700
-    freq_max 5800
-    freq_step 10
+    freq_min 100
+    freq_max 500
+    freq_step 50
     block all
     disp
     //acceleration
 END
 BOUNDARY
     nodeset 1
-	    accely = 357 //average of mock data accelerations
+	    accely = 1e3 //order of magnitude of mock data accelerations
 	    function 1
 	    //disp0 = 0.0
 	    //vel0 = 0.0
