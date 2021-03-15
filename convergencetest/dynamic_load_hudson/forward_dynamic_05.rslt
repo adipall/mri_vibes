@@ -1,0 +1,38 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward_dynamic_05
+	Title: untitled
+Current date, time: Thu Mar 11, 2021, 19:49:58
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  basemodel_hooks_5.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   42339      Tet4   1          5.785943   
+
+  Nodeset ID   Nodeset Name    Num Node   
+  ----------   -------------   --------   
+  1            tablenodes      409        
+  2            topcurvenodes   312        
+
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface      686        
+  2            topcurvesurface   521        
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:02:12
