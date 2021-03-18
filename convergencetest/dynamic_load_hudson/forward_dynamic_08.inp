@@ -35,9 +35,9 @@ BLOCK 1
     material 1
 END
 MATERIAL 1
-    E 200e9
-    nu 0.3
-    density 7850
+    E 2200e6
+    nu 0.35
+    density 1040
 END
 OUTPUTS
     disp
