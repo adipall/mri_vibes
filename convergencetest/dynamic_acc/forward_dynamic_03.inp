@@ -9,16 +9,16 @@ SOLUTION
         directfrf
 END
 FREQUENCY
-    freq_min 5700
-    freq_max 5800
-    freq_step 10
+    freq_min 60
+    freq_max 600
+    freq_step 60
     block all
     disp
     //acceleration
 END
 BOUNDARY
     nodeset 1
-	accelZ = 357 //average of mock data accelerations
+	accelY = 10 //average of mock data accelerations
 	function 1
 	//disp0 = 0.0
 	//vel0 = 0.0
@@ -35,9 +35,9 @@ BLOCK 1
     material 1
 END
 MATERIAL 1
-    E 200e9
-    nu 0.3
-    density 7850
+    E 2200e6
+    nu 0.35
+    density 1040
 END
 OUTPUTS
     disp
