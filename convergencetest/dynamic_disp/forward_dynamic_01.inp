@@ -18,7 +18,7 @@ FREQUENCY
 END
 BOUNDARY
     nodeset 1
-	    y = 10 //average of mock data disp
+	y = 10 //average of mock data disp
 	function 1
 	//disp0 = 0.0
 	//vel0 = 0.0

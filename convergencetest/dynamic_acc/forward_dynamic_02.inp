@@ -18,7 +18,7 @@ FREQUENCY
 END
 BOUNDARY
     nodeset 1
-	    accelY = 10 //average of mock data accelerations
+	accelY = 10 //average of mock data accelerations
 	function 1
 	//disp0 = 0.0
 	//vel0 = 0.0
