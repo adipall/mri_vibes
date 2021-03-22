@@ -4,7 +4,7 @@ close all
 clc
 
 % read in voltage file
-fname = "Oscilloscope/acq0063.csv"; 
+fname = "Oscilloscope/acq0057.csv"; 
 T = readtable(fname);                   %, 'HeaderLines',3); 
 t = T{:,1};
 V1 = T{:,2};
