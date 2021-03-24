@@ -1,0 +1,35 @@
+FILE
+    geometry_file = 'expmodel_3.e'
+END
+SOLUTION
+    statics
+END
+BOUNDARY
+    nodeset 1
+    	fixed    		
+END
+LOADS
+	nodeset 2
+	force = 0. 0. 1.0
+	scale = 1e3
+	function =1
+END
+FUNCTION 1
+    type linear
+    data 0 0
+    data 0 1
+END
+BLOCK 1
+    material 1
+END
+MATERIAL 1
+    E 2200e6
+    nu 0.35
+    density 1040
+END
+OUTPUTS
+    disp
+    //stress
+END
+ECHO
+END
