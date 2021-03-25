@@ -1,0 +1,58 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward_dynamic_25
+	Title: untitled
+Current date, time: Thu Mar 25, 2021, 02:07:23
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_25.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   19746      Tet4   1          2.198086   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablesurface   76         
+  2            topcurve       34         
+
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface_ss   100        
+  2            topcurve_ss       48         
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           63 |           63
+        mass |      8.9e+03 |      8.9e+03
+There are no negative diagonal entries.
+     Dynamic |           63 |           63
+Using 'auto' solver.
+Eigenvalues:
+1: 7.3388	(0.431154)
+2: 16.0623	(0.637857)
+3: 38.2017	(0.983697)
+4: 99.6748	(1.58896)
+5: 123.298	(1.76725)
+6: 178.579	(2.12684)
+7: 218.535	(2.35278)
+8: 220.081	(2.36108)
+9: 224.937	(2.38699)
+10: 241.243	(2.47199)
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:01:38
