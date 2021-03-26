@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_dynamic_1
 	Title: untitled
-Current date, time: Thu Mar 25, 2021, 02:45:31
+Current date, time: Thu Mar 25, 2021, 04:21:44
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -36,7 +36,7 @@ Input mesh:
 **  FATAL ERROR: 
 **  Time functions cannot be used with displacement BCs. This can only be done with acceleration BCs.
 ************************************************************************************************************************
-Salinas - page 2                               Thu Mar 25 02:45:31 2021
+Salinas - page 2                               Thu Mar 25 04:21:44 2021
 
 ************************************************************************************************************************
 **  WARNING: 
