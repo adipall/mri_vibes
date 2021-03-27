@@ -1,0 +1,42 @@
+FILE
+    geometry_file = 'expmodel_1.e'
+END
+
+SOLUTION
+    case dfrf
+        directfrf
+END
+FREQUENCY
+    freq_min 10
+    freq_max 10
+    freq_step 30
+    block all
+    disp
+    //acceleration
+END
+BOUNDARY
+END
+LOADS
+	nodeset 1
+	     force = 0 1e5 0
+	     function 1
+END
+FUNCTION 1
+    type linear
+    data 0 1
+    data 1e6 1
+END
+BLOCK 1
+    material 1
+END
+MATERIAL 1
+    E 2200e6
+    nu 0.35
+    density 1040
+END
+OUTPUTS
+    disp
+    //stress
+END
+ECHO
+END
