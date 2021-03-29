@@ -18,13 +18,13 @@ BOUNDARY
 END
 LOADS
 	nodeset 1
-	    force = 0 1e4 0
+	    force = 0 100. 0
 	    function 1
 END
 FUNCTION 1
     type linear
+    data 0 0
     data 0 1
-    data 1e6 1
 END
 BLOCK 1
     material 1

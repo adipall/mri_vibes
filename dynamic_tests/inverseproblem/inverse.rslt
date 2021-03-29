@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: inverse
 	Title: untitled
-Current date, time: Mon Mar 29, 2021, 20:40:37
+Current date, time: Mon Mar 29, 2021, 20:50:04
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -43,7 +43,7 @@ Minimum Mass Eigenvalue: 0
 ************************************************************************************************************************
 ************************************************************************************************************************
 **  WARNING: 
-**  Experimental data for displacements has norm = 36.367
+**  Experimental data for displacements has norm = 363670
 **  
 ************************************************************************************************************************
 Using 'superlu' solver.
