@@ -8,10 +8,10 @@ OPTIMIZATION
     ROLmethod = linesearch
     LSstep = newton-krylov
     //want to try with and w/o following parameters:
-    //Max_iter_Krylov = 50
-    //opt_tolerance = 1e-8
-    //opt_iterations = 5
-    //scaleDesignVars = yes
+    Max_iter_Krylov = 50
+    opt_tolerance = 1e-8
+    opt_iterations = 5
+    scaleDesignVars = yes
 END
 INVERSE-PROBLEM
     data_truth_table = ttable.txt
