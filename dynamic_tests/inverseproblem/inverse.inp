@@ -15,8 +15,8 @@ OPTIMIZATION
 END
 INVERSE-PROBLEM
     data_truth_table = ttable.txt
-    real_data_file = data.txt
-    imaginary_data_file = data_im.txt
+    real_data_file = dataReal.txt
+    imaginary_data_file = dataImag.txt
     data_type = disp
 END
 FILE
