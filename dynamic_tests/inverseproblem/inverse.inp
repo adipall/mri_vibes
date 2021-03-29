@@ -46,6 +46,10 @@ BLOCK 1
     inverse_material_type = heterogeneous
 END
 MATERIAL 1
+    G_bounds = 1 1e5
+    K_bounds = 1 1e5
+    G 1e4
+    K 1e4
     E 2200e6
     nu 0.35
     density 1040
