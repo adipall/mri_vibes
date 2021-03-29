@@ -1,12 +1,26 @@
-#include inverseProb.txt
 SOLUTION
     case getModes
         eigen
     case invMat
         directfrf-materialid
 END
+OPTIMIZATION
+    ROLmethod = linesearch
+    LSstep = newton-krylov
+    //want to try with and w/o following parameters:
+    //Max_iter_Krylov = 50
+    //opt_tolerance = 1e-8
+    //opt_iterations = 5
+    //scaleDesignVars = yes
+END
+INVERSE-PROBLEM
+    data_truth_table = ttable.txt
+    real_data_file = data.txt
+    imaginary_data_file = data_im.txt
+    data_type = disp
+END
 FILE
-    geometry_file = 'expmodel_5.e'
+    geometry_file = 'expmodel_4.e'
 END
 FREQUENCY
     freq_min = 20
@@ -29,6 +43,7 @@ FUNCTION 1
 END
 BLOCK 1
     material 1
+    inverse_material_type = heterogeneous
 END
 MATERIAL 1
     E 2200e6
