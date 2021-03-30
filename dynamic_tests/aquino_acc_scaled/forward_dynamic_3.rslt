@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_dynamic_3
 	Title: untitled
-Current date, time: Tue Mar 30, 2021, 02:29:03
+Current date, time: Tue Mar 30, 2021, 03:05:06
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -62,4 +62,4 @@ Eigenvalues:
 ************************************************************************************************************************
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:48
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:50

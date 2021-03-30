@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_dynamic_5
 	Title: untitled
-Current date, time: Tue Mar 30, 2021, 02:30:07
+Current date, time: Tue Mar 30, 2021, 03:06:15
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -56,10 +56,10 @@ Eigenvalues:
 **  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
 **  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
 **  solver to accurately compute a solution.
-**  Eigenvalue of First Elastic Mode = 178093780.099348
+**  Eigenvalue of First Elastic Mode = 178093780.056067
 **  Shift= -1.000000
 **  
 ************************************************************************************************************************
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:01:36
+Salinas Complete. 1 Warnings. Elapsed time: 0:01:37
