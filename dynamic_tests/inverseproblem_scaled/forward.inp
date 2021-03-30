@@ -18,7 +18,7 @@ BOUNDARY
 END
 LOADS
 	nodeset 1
-	    force = 0 100. 0
+	    force = 0 1.0 0
 	    function 1
 END
 FUNCTION 1
