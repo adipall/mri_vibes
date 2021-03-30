@@ -5,11 +5,11 @@ SOLUTION
         directfrf
 END
 FILE
-    geometry_file = 'expmodel_4.e'
+    geometry_file = 'expmodel_3.e'
 END
 FREQUENCY
-    freq_min = 20
-    freq_max = 20
+    freq_min = 30
+    freq_max = 30
     freq_step = 10
     block all
     disp
@@ -23,8 +23,8 @@ LOADS
 END
 FUNCTION 1
     type linear
-    data 0 0
     data 0 1
+    data 1e6 1
 END
 BLOCK 1
     material 1

@@ -20,11 +20,11 @@ INVERSE-PROBLEM
     data_type = disp
 END
 FILE
-    geometry_file = 'expmodel_4.e'
+    geometry_file = 'expmodel_3.e'
 END
 FREQUENCY
-    freq_min = 20
-    freq_max = 20
+    freq_min = 30
+    freq_max = 30
     freq_step = 10
     block all
     disp
@@ -33,7 +33,7 @@ BOUNDARY
 END
 LOADS
 	nodeset 1
-	    force = 0 100. 0
+	    force = 0 1. 0
 	    function 1
 END
 FUNCTION 1
