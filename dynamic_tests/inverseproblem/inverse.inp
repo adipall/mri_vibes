@@ -3,13 +3,14 @@ SOLUTION
         //eigen
     case invMat
         directfrf-materialid
+            solver = GDSW
 END
 OPTIMIZATION
     ROLmethod = linesearch
     LSstep = newton-krylov
     //want to try with and w/o following parameters:
     //Max_iter_Krylov = 50
-    opt_tolerance = 1e-8
+    //opt_tolerance = 1e-8
     opt_iterations = 5
     scaleDesignVars = yes
 END
@@ -32,14 +33,14 @@ END
 BOUNDARY
 END
 LOADS
-	nodeset 1
-	    force = 0 100. 0
+	nodeset 2
+	    force = 0 1. 0
 	    function 1
 END
 FUNCTION 1
     type linear
+    data 0 0
     data 0 1
-    data 1e6 1
 END
 BLOCK 1
     material 1

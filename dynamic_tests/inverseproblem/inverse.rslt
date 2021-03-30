@@ -8,11 +8,11 @@ Number of mpi ranks: 1
 
 Input file: inverse
 	Title: untitled
-Current date, time: Mon Mar 29, 2021, 21:05:55
+Current date, time: Tue Mar 30, 2021, 04:19:56
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
-Solver 'undefined' selected by user input for analysis of case 'invMat'.
+Solver 'GDSW' selected by user input for analysis of case 'invMat'.
 ================================== MESH PROPERTIES =====================================
 Input mesh: 
   expmodel_4.e
@@ -43,10 +43,16 @@ Minimum Mass Eigenvalue: 0
 ************************************************************************************************************************
 ************************************************************************************************************************
 **  WARNING: 
-**  Experimental data for displacements has norm = 36.367
+**  Experimental data for displacements has norm = 2.06525e-10
 **  
 ************************************************************************************************************************
-Using 'superlu' solver.
+Using 'GDSW' solver.
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           24 |           24
+        mass |      7.4e+02 |      7.4e+02
+There are no negative diagonal entries.
 ************************************************************************************************************************
 **  WARNING: 
 **  Aborted from processor 0

@@ -1,0 +1,83 @@
+initial residual = 8.06226
+Right GMRES iteration 1 of maxIter = 1000: relative residual = 0.0754515
+Right GMRES iteration 2 of maxIter = 1000: relative residual = 0.0397907
+Right GMRES iteration 3 of maxIter = 1000: relative residual = 0.0285182
+Right GMRES iteration 4 of maxIter = 1000: relative residual = 0.00944362
+Right GMRES iteration 5 of maxIter = 1000: relative residual = 0.0028091
+Right GMRES iteration 6 of maxIter = 1000: relative residual = 0.000729947
+Right GMRES iteration 7 of maxIter = 1000: relative residual = 0.000600704
+Right GMRES iteration 8 of maxIter = 1000: relative residual = 0.000533003
+Right GMRES iteration 9 of maxIter = 1000: relative residual = 0.000414536
+Right GMRES iteration 10 of maxIter = 1000: relative residual = 0.000280978
+Right GMRES iteration 11 of maxIter = 1000: relative residual = 0.00016212
+Right GMRES iteration 12 of maxIter = 1000: relative residual = 0.000109591
+Right GMRES iteration 13 of maxIter = 1000: relative residual = 7.16719e-05
+Right GMRES iteration 14 of maxIter = 1000: relative residual = 2.82151e-05
+Right GMRES iteration 15 of maxIter = 1000: relative residual = 9.41452e-06
+Right GMRES iteration 16 of maxIter = 1000: relative residual = 3.21898e-06
+Right GMRES iteration 17 of maxIter = 1000: relative residual = 1.00528e-06
+Right GMRES iteration 18 of maxIter = 1000: relative residual = 2.92111e-07
+recursive final residual              = 2.35507e-06
+actual final residual                 = 2.35507e-06
+elapsed time for this solve (seconds) = 0.403745
+initial residual = 8.06226
+number of previous solutions used        = 0
+number of search directions used         = 18
+residual after using initial corrections = 2.35507e-06
+elapsed time for this solve (seconds) = 0.00333095
+initial residual = 1.28765e+09
+number of previous solutions used        = 0
+number of search directions used         = 18
+residual after using initial corrections = 8.91706e+08
+Right GMRES iteration 1 of maxIter = 1000: relative residual = 0.0388547
+Right GMRES iteration 2 of maxIter = 1000: relative residual = 0.00419062
+Right GMRES iteration 3 of maxIter = 1000: relative residual = 0.00137516
+Right GMRES iteration 4 of maxIter = 1000: relative residual = 0.000317055
+Right GMRES iteration 5 of maxIter = 1000: relative residual = 9.65675e-05
+Right GMRES iteration 6 of maxIter = 1000: relative residual = 3.2342e-05
+Right GMRES iteration 7 of maxIter = 1000: relative residual = 8.31454e-06
+Right GMRES iteration 8 of maxIter = 1000: relative residual = 2.26385e-06
+Right GMRES iteration 9 of maxIter = 1000: relative residual = 5.42708e-07
+recursive final residual              = 698.816
+actual final residual                 = 698.816
+elapsed time for this solve (seconds) = 0.191492
+initial residual = 1.85829e+07
+number of previous solutions used        = 0
+number of search directions used         = 10
+residual after using initial corrections = 1.64953e+07
+Right GMRES iteration 1 of maxIter = 1000: relative residual = 0.028763
+Right GMRES iteration 2 of maxIter = 1000: relative residual = 0.00985484
+Right GMRES iteration 3 of maxIter = 1000: relative residual = 0.00435885
+Right GMRES iteration 4 of maxIter = 1000: relative residual = 0.00310788
+Right GMRES iteration 5 of maxIter = 1000: relative residual = 0.00198101
+Right GMRES iteration 6 of maxIter = 1000: relative residual = 0.000817411
+Right GMRES iteration 7 of maxIter = 1000: relative residual = 0.000331904
+Right GMRES iteration 8 of maxIter = 1000: relative residual = 0.000173192
+Right GMRES iteration 9 of maxIter = 1000: relative residual = 5.66474e-05
+Right GMRES iteration 10 of maxIter = 1000: relative residual = 2.28129e-05
+Right GMRES iteration 11 of maxIter = 1000: relative residual = 8.47249e-06
+Right GMRES iteration 12 of maxIter = 1000: relative residual = 1.71937e-06
+Right GMRES iteration 13 of maxIter = 1000: relative residual = 3.69973e-07
+recursive final residual              = 6.87517
+actual final residual                 = 6.87517
+elapsed time for this solve (seconds) = 0.294339
+initial residual = 1.48847e+16
+number of previous solutions used        = 0
+number of search directions used         = 10
+residual after using initial corrections = 1.14783e+16
+Right GMRES iteration 1 of maxIter = 1000: relative residual = 0.0558178
+Right GMRES iteration 2 of maxIter = 1000: relative residual = 0.0164759
+Right GMRES iteration 3 of maxIter = 1000: relative residual = 0.00928819
+Right GMRES iteration 4 of maxIter = 1000: relative residual = 0.00577552
+Right GMRES iteration 5 of maxIter = 1000: relative residual = 0.00323189
+Right GMRES iteration 6 of maxIter = 1000: relative residual = 0.00126694
+Right GMRES iteration 7 of maxIter = 1000: relative residual = 0.000448714
+Right GMRES iteration 8 of maxIter = 1000: relative residual = 0.000158859
+Right GMRES iteration 9 of maxIter = 1000: relative residual = 6.17922e-05
+Right GMRES iteration 10 of maxIter = 1000: relative residual = 2.28943e-05
+Right GMRES iteration 11 of maxIter = 1000: relative residual = 7.20101e-06
+Right GMRES iteration 12 of maxIter = 1000: relative residual = 2.49586e-06
+Right GMRES iteration 13 of maxIter = 1000: relative residual = 7.25214e-07
+recursive final residual              = 1.07946e+10
+actual final residual                 = 1.07946e+10
+elapsed time for this solve (seconds) = 0.286997

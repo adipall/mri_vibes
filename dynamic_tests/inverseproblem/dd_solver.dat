@@ -1,0 +1,46 @@
+Notice: single processor solver parameters may overide those specified for parallel runs
+******************************************************************
+--- domain decomposition solver summary ---
+preconditioner                   = GDSW
+Helmholtz preconditioning option = Operator-Damped
+preconditioner update freq       = 10
+Krylov method                    = Right GMRES (gmresClassic)
+solver option                    = Pardiso
+number of processors             = 1
+total number of unknowns         = 15537
+minimum subdomain size           = 15537
+maximum subdomain size           = 15537
+number of Type 1 constraints     = 0
+number of Type 2 constraints     = 0
+max slaves for master dof        = -1
+overlap                          = 0
+using interface preconditioner   = no
+coarse correction                = none
+solver tolerance                 = 1e-06
+maximum number of iterations     = 1000
+maximum number of restarts       = 1
+maximum stored directions        = 20
+stored direction cull method     = simple
+solving scaled problem           = no
+operator diagonal magnitudes ---
+min                              = 41.2937
+max                              = 996.499
+max/min                          = 24.132
+Rigid Body Norm for Mode 1       = 9.13613e-05
+Rigid Body Norm for Mode 2       = 9.13613e-05
+Rigid Body Norm for Mode 3       = 9.13613e-05
+Rigid Body Norm for Mode 4       = 0.000110297
+Rigid Body Norm for Mode 5       = 9.93025e-05
+Rigid Body Norm for Mode 6       = 0.000109921
+maximum overlap rows             = 0
+coarse space type                = large
+number of coarse levels          = 0
+solver initialization time       = 0.539907 seconds
+                           Recursive      Actual
+                            Relative    Relative
+Solve  Iter  Total  Avg     Residual    Residual     CPU (s)   Total (s)      Avg (s)
+    1    18     18   18  2.92111e-07 2.92111e-07    0.403745    0.403745     0.403745
+    2     0     18    9  2.92111e-07 2.92111e-07  0.00333095    0.407076     0.203538
+    3     9     27    9  5.42708e-07 5.42708e-07    0.191492    0.598568     0.199523
+    4    13     40   10  3.69973e-07 3.69973e-07    0.294339    0.892907     0.223227
+    5    13     53   10  7.25214e-07 7.25214e-07    0.286997      1.1799     0.235981
