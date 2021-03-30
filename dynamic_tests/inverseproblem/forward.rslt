@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward
 	Title: untitled
-Current date, time: Mon Mar 29, 2021, 20:55:23
+Current date, time: Tue Mar 30, 2021, 04:11:51
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -35,31 +35,22 @@ Minimum Mass Eigenvalue: 0
 Approximate Matrix infinity norm ratios
       Matrix |        Local |       Global
 ==========================================
-   stiffness |           31 |           31
+   stiffness |           28 |           28
         mass |      7.4e+02 |      7.4e+02
 There are no negative diagonal entries.
-     Dynamic |           31 |           31
+     Dynamic |           28 |           28
 Using 'auto' solver.
 Eigenvalues:
-1: -1.75177e-06	(-0.000210649)
-2: -5.49736e-07	(-0.000118004)
-3: -2.29763e-07	(-7.62887e-05)
-4: 7.85065e-07	(0.000141017)
-5: 1.22095e-06	(0.000175861)
-6: 1.46072e-06	(0.000192355)
-7: 4.38969e+07	(1054.48)
-8: 5.43629e+07	(1173.47)
-9: 1.10859e+08	(1675.73)
-10: 1.19642e+08	(1740.85)
-************************************************************************************************************************
-**  WARNING: 
-**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
-**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
-**  solver to accurately compute a solution.
-**  Eigenvalue of First Elastic Mode = 43896888.712302
-**  Shift= -1.000000
-**  
-************************************************************************************************************************
+1: 7.11559e+06	(424.547)
+2: 1.57293e+07	(631.212)
+3: 3.64129e+07	(960.391)
+4: 9.57287e+07	(1557.19)
+5: 1.22595e+08	(1762.21)
+6: 1.74225e+08	(2100.75)
+7: 2.17602e+08	(2347.75)
+8: 2.2011e+08	(2361.24)
+9: 2.28474e+08	(2405.68)
+10: 2.31718e+08	(2422.7)
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:08
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:07
