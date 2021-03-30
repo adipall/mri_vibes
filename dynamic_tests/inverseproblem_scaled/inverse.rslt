@@ -1,0 +1,53 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: inverse
+	Title: untitled
+Current date, time: Tue Mar 30, 2021, 03:28:07
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'invMat'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_3.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   25979      Tet4   1          2.497118   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablesurface   108        
+  2            topcurve       41         
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+************************************************************************************************************************
+**  WARNING: 
+**  Using Shear and Bulk moduli as unknowns in material inversion for block 1
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Experimental data for acoustic pressures has norm = 0
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Experimental data for displacements has norm = 0.0173375
+**  
+************************************************************************************************************************
+Using 'superlu' solver.
+************************************************************************************************************************
+**  WARNING: 
+**  Aborted from processor 0
+************************************************************************************************************************
