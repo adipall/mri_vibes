@@ -47,59 +47,7 @@ BLOCK 1
     material 1
     inverse_material_type = heterogeneous
 END
-BLOCK 2
-    material 2
-    inverse_material_type = heterogeneous
-END
-BLOCK 11
-    material 11
-    inverse_material_type = heterogeneous
-END
-BLOCK 12
-    material 12
-    inverse_material_type = heterogeneous
-END
-BLOCK 13
-    material 13
-    inverse_material_type = heterogeneous
-END
 MATERIAL 1
-    G_bounds = 1 1e5
-    K_bounds = 1 1e5
-    G 1e4
-    K 1e4
-    //E 200e9
-    //nu 0.3
-    density 7850
-END
-MATERIAL 2
-    G_bounds = 1 1e5
-    K_bounds = 1 1e5
-    G 1e4
-    K 1e4
-    //E 200e9
-    //nu 0.3
-    density 7850
-END
-MATERIAL 11
-    G_bounds = 1 1e5
-    K_bounds = 1 1e5
-    G 1e4
-    K 1e4
-    //E 200e9
-    //nu 0.3
-    density 7850
-END
-MATERIAL 12
-    G_bounds = 1 1e5
-    K_bounds = 1 1e5
-    G 1e4
-    K 1e4
-    //E 200e9
-    //nu 0.3
-    density 7850
-END
-MATERIAL 13
     G_bounds = 1 1e5
     K_bounds = 1 1e5
     G 1e4

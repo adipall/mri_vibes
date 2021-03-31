@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward
 	Title: untitled
-Current date, time: Wed Mar 31, 2021, 02:51:48
+Current date, time: Wed Mar 31, 2021, 22:27:26
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -20,40 +20,40 @@ Input mesh:
 
   Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
   --------   ----------   -------------   --------   ----   --------   --------   
-  1          block_1      TETRAHEDRON_4   876        Tet4   1          1.454302   
+  1          block_1      TETRAHEDRON_4   11516      Tet4   1          1.665207   
 
   Nodeset ID   Nodeset Name   Num Node   
   ----------   ------------   --------   
-  1            tablenodes     17         
-  2            topnodes       17         
-  100          all_nodes      247        
+  1            nodelist_1     52         
+  2            nodelist_2     52         
+  100          nodelist_100   2397       
 
   Sideset ID   Sideset Name   Num Face   
   ----------   ------------   --------   
-  1            tablesurface   18         
-  2            topsurface     18         
+  1            surface_1      78         
+  2            surface_2      78         
 =======================================================================================
 we found 0 local rigid link constraint equations.
 Minimum Mass Eigenvalue: 0
 Approximate Matrix infinity norm ratios
       Matrix |        Local |       Global
 ==========================================
-   stiffness |          7.9 |          7.9
+   stiffness |          9.4 |          9.4
         mass |           12 |           12
 There are no negative diagonal entries.
-     Dynamic |          7.9 |          7.9
+     Dynamic |          9.4 |          9.4
 Using 'auto' solver.
 Eigenvalues:
-1: 5.89885e+08	(3865.48)
-2: 2.107e+09	(7305.54)
-3: 7.04508e+09	(13358.7)
-4: 1.60025e+10	(20133.3)
-5: 2.59498e+10	(25638.2)
-6: 3.04241e+10	(27760.6)
-7: 6.36387e+10	(40149.5)
-8: 8.91325e+10	(47515.8)
-9: 1.3621e+11	(58738.7)
-10: 1.83832e+11	(68238.7)
+1: 10553.7	(16.3502)
+2: 10573.6	(16.3655)
+3: 228989	(76.1601)
+4: 306709	(88.142)
+5: 306879	(88.1665)
+6: 637592	(127.084)
+7: 1.74832e+06	(210.441)
+8: 1.74949e+06	(210.512)
+9: 2.0644e+06	(228.674)
+10: 4.86001e+06	(350.864)
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 0 Warnings. Elapsed time: 0:00:01
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:02
