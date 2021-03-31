@@ -1,0 +1,59 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward
+	Title: untitled
+Current date, time: Wed Mar 31, 2021, 02:08:37
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_3.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   23718      Tet4   1          1.760332   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablesurface   140        
+  2            topcurve       65         
+  100          allnodes       5179       
+
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface_ss   208        
+  2            topcurve_ss       100        
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           30 |           30
+        mass |      7.8e+02 |      7.8e+02
+There are no negative diagonal entries.
+     Dynamic |           30 |           30
+Using 'auto' solver.
+Eigenvalues:
+1: 7.11008	(0.424382)
+2: 15.7328	(0.631281)
+3: 36.4453	(0.960818)
+4: 95.6828	(1.55682)
+5: 122.605	(1.76227)
+6: 174.272	(2.10104)
+7: 217.451	(2.34693)
+8: 218.062	(2.35023)
+9: 227.538	(2.40075)
+10: 231.891	(2.4236)
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:06
