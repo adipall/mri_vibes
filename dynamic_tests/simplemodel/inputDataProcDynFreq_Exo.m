@@ -10,7 +10,7 @@ clc
 format long
 
 %****************************INPUT PARAMETERS******************
-inputfile ='./beam-dfrf.e';
+inputfile ='simplemodel-dfrf.e';
 % Measured dofs
 X = 1;
 Y = 1;
