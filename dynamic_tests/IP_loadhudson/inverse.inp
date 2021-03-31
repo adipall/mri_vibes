@@ -21,7 +21,7 @@ INVERSE-PROBLEM
     data_type = disp
 END
 FILE
-    geometry_file = 'expmodel_4.e'
+    geometry_file = 'expmodel_3.e'
 END
 FREQUENCY
     freq_min = 20

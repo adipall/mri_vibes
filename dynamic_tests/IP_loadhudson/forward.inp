@@ -1,5 +1,5 @@
 FILE
-    geometry_file = 'expmodel_4.e'
+    geometry_file = 'expmodel_3.e'
 END
 
 SOLUTION
