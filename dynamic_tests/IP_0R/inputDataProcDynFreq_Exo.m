@@ -10,7 +10,7 @@ clc
 format long
 
 %****************************INPUT PARAMETERS******************
-inputfile ='expmodel_3-dfrf.e';
+inputfile ='IPtestmodel-dfrf.e';
 % Measured dofs
 X = 1;
 Y = 1;
