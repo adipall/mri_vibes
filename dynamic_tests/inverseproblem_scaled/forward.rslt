@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward
 	Title: untitled
-Current date, time: Tue Mar 30, 2021, 03:21:05
+Current date, time: Wed Mar 31, 2021, 01:09:09
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -27,8 +27,10 @@ Input mesh:
   1            tablesurface   108        
   2            topcurve       41         
 
-  Sideset ID   Sideset Name   Num Face   
-  ----------   ------------   --------   
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface_ss   153        
+  2            topcurve_ss       58         
 =======================================================================================
 we found 0 local rigid link constraint equations.
 Minimum Mass Eigenvalue: 0
@@ -41,25 +43,16 @@ There are no negative diagonal entries.
      Dynamic |           42 |           42
 Using 'auto' solver.
 Eigenvalues:
-1: -1.40824e-06	(-0.000188868)
-2: -1.59946e-07	(-6.36513e-05)
-3: 1.64847e-06	(0.000204343)
-4: 2.72625e-06	(0.000262786)
-5: 5.31441e-06	(0.0003669)
-6: 5.72726e-06	(0.000380885)
-7: 1.82821e+08	(2151.95)
-8: 2.17012e+08	(2344.56)
-9: 4.43203e+08	(3350.59)
-10: 5.51815e+08	(3738.67)
-************************************************************************************************************************
-**  WARNING: 
-**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
-**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
-**  solver to accurately compute a solution.
-**  Eigenvalue of First Elastic Mode = 182820876.333364
-**  Shift= -1.000000
-**  
-************************************************************************************************************************
+1: 2.86718e+07	(852.212)
+2: 6.30975e+07	(1264.23)
+3: 1.48472e+08	(1939.29)
+4: 3.87279e+08	(3132.07)
+5: 4.90371e+08	(3524.38)
+6: 7.03438e+08	(4221.17)
+7: 8.45516e+08	(4627.87)
+8: 8.51901e+08	(4645.31)
+9: 8.5982e+08	(4666.85)
+10: 9.40436e+08	(4880.73)
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:11
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:11
