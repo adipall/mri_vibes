@@ -8,56 +8,12 @@ Number of mpi ranks: 1
 
 Input file: forward
 	Title: untitled
-Current date, time: Wed Mar 31, 2021, 02:46:56
+Current date, time: Wed Mar 31, 2021, 02:51:48
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
 Solver 'undefined' selected by user input for analysis of case 'getModes'.
 Solver 'undefined' selected by user input for analysis of case 'dfrf'.
-************************************************************************************************************************
-**  WARNING: 
-**  Invalid block id in the Block section.
-**  Found '2'.
-**  
-**  The Following blocks have been defined in the mesh:
-**    block name   block id   
-**    ----------   --------   
-**    block_1      1          
-**  
-************************************************************************************************************************
-************************************************************************************************************************
-**  WARNING: 
-**  Invalid block id in the Block section.
-**  Found '11'.
-**  
-**  The Following blocks have been defined in the mesh:
-**    block name   block id   
-**    ----------   --------   
-**    block_1      1          
-**  
-************************************************************************************************************************
-************************************************************************************************************************
-**  WARNING: 
-**  Invalid block id in the Block section.
-**  Found '12'.
-**  
-**  The Following blocks have been defined in the mesh:
-**    block name   block id   
-**    ----------   --------   
-**    block_1      1          
-**  
-************************************************************************************************************************
-************************************************************************************************************************
-**  WARNING: 
-**  Invalid block id in the Block section.
-**  Found '13'.
-**  
-**  The Following blocks have been defined in the mesh:
-**    block name   block id   
-**    ----------   --------   
-**    block_1      1          
-**  
-************************************************************************************************************************
 ================================== MESH PROPERTIES =====================================
 Input mesh: 
   simplemodel.e
@@ -100,4 +56,4 @@ Eigenvalues:
 10: 1.83832e+11	(68238.7)
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 4 Warnings. Elapsed time: 0:00:00
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:01
