@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward
 	Title: untitled
-Current date, time: Wed Mar 31, 2021, 01:09:09
+Current date, time: Wed Mar 31, 2021, 01:20:26
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -26,6 +26,7 @@ Input mesh:
   ----------   ------------   --------   
   1            tablesurface   108        
   2            topcurve       41         
+  100          allnodes       5801       
 
   Sideset ID    Sideset Name     Num Face   
   ----------   ---------------   --------   
