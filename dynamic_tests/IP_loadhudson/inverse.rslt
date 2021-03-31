@@ -1,0 +1,76 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: inverse
+	Title: untitled
+Current date, time: Wed Mar 31, 2021, 02:17:17
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'invMat'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_3.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   23718      Tet4   1          1.760332   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablesurface   140        
+  2            topcurve       65         
+  100          allnodes       5179       
+
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface_ss   208        
+  2            topcurve_ss       100        
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           25 |           25
+        mass |      7.8e+02 |      7.8e+02
+There are no negative diagonal entries.
+     Dynamic |           33 |           33
+Using 'auto' solver.
+Eigenvalues:
+1: 7.22834e-05	(0.00135313)
+2: 0.000160021	(0.0020133)
+3: 0.000411501	(0.00322853)
+4: 0.00100696	(0.0050504)
+5: 0.00123597	(0.00559531)
+6: 0.00188812	(0.00691568)
+7: 0.00217128	(0.00741615)
+8: 0.00219261	(0.00745249)
+9: 0.00244016	(0.00786193)
+10: 0.00267249	(0.0082277)
+************************************************************************************************************************
+**  WARNING: 
+**  Using Shear and Bulk moduli as unknowns in material inversion for block 1
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Try turning these DOFs off in the truth table.
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Experimental data for acoustic pressures has norm = 0
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Experimental data for displacements has norm = 4.42786e-10
+**  
+************************************************************************************************************************
+Using 'superlu' solver.

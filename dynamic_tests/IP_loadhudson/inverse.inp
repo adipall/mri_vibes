@@ -1,9 +1,8 @@
 SOLUTION
-    //case getModes
-        //eigen
+    case getModes
+        eigen
     case invMat
         directfrf-materialid
-            solver = GDSW
 END
 OPTIMIZATION
     ROLmethod = linesearch

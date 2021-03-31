@@ -1,0 +1,46 @@
+Notice: single processor solver parameters may overide those specified for parallel runs
+******************************************************************
+--- domain decomposition solver summary ---
+preconditioner                   = GDSW
+Helmholtz preconditioning option = Operator-Damped
+preconditioner update freq       = 10
+Krylov method                    = Right GMRES (gmresClassic)
+solver option                    = Pardiso
+number of processors             = 1
+total number of unknowns         = 15117
+minimum subdomain size           = 15117
+maximum subdomain size           = 15117
+number of Type 1 constraints     = 0
+number of Type 2 constraints     = 0
+max slaves for master dof        = -1
+overlap                          = 0
+using interface preconditioner   = no
+coarse correction                = none
+solver tolerance                 = 1e-06
+maximum number of iterations     = 1000
+maximum number of restarts       = 1
+maximum stored directions        = 20
+stored direction cull method     = simple
+solving scaled problem           = no
+operator diagonal magnitudes ---
+min                              = 9.5783e+06
+max                              = 7.56665e+09
+max/min                          = 789.978
+Rigid Body Norm for Mode 1       = 0.018533
+Rigid Body Norm for Mode 2       = 0.018533
+Rigid Body Norm for Mode 3       = 0.018533
+Rigid Body Norm for Mode 4       = 0.0224058
+Rigid Body Norm for Mode 5       = 0.0200477
+Rigid Body Norm for Mode 6       = 0.0223212
+maximum overlap rows             = 0
+coarse space type                = large
+number of coarse levels          = 0
+solver initialization time       = 0.435438 seconds
+                           Recursive      Actual
+                            Relative    Relative
+Solve  Iter  Total  Avg     Residual    Residual     CPU (s)   Total (s)      Avg (s)
+    1     2      2    2   4.7652e-10  4.7652e-10    0.055213    0.055213     0.055213
+    2     0      2    1   4.7652e-10  4.7652e-10  0.00217104    0.057384     0.028692
+    3     2      4    1   3.4324e-08  3.4324e-08   0.0553071    0.112691    0.0375637
+    4     2      6    1  1.64204e-08 1.64204e-08     0.08038    0.193071    0.0482678
+    5     2      8    1  4.75325e-09 4.75325e-09     0.07778    0.270851    0.0541702

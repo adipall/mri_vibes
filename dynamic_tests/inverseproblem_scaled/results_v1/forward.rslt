@@ -1,0 +1,59 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward
+	Title: untitled
+Current date, time: Wed Mar 31, 2021, 01:20:26
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_3.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   25979      Tet4   1          2.497118   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablesurface   108        
+  2            topcurve       41         
+  100          allnodes       5801       
+
+  Sideset ID    Sideset Name     Num Face   
+  ----------   ---------------   --------   
+  1            tablesurface_ss   153        
+  2            topcurve_ss       58         
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           42 |           42
+        mass |      1.6e+03 |      1.6e+03
+There are no negative diagonal entries.
+     Dynamic |           42 |           42
+Using 'auto' solver.
+Eigenvalues:
+1: 2.86718e+07	(852.212)
+2: 6.30975e+07	(1264.23)
+3: 1.48472e+08	(1939.29)
+4: 3.87279e+08	(3132.07)
+5: 4.90371e+08	(3524.38)
+6: 7.03438e+08	(4221.17)
+7: 8.45516e+08	(4627.87)
+8: 8.51901e+08	(4645.31)
+9: 8.5982e+08	(4666.85)
+10: 9.40436e+08	(4880.73)
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:00:11
