@@ -1,0 +1,11 @@
+
+Newton-Krylov using Conjugate Gradients
+Line Search: Cubic Interpolation satisfying Strong Wolfe Conditions
+  iter  value          gnorm          snorm          #fval     #grad     iterCG    flagCG    ls_#fval  ls_#grad  
+  0     7.768161e+06   7.974867e+04   
+  1     5.142255e+06   3.677826e+04   4.922944e+01   2         2         3         2         1         0         
+  2     3.283989e+06   1.569547e+04   7.677974e+01   3         3         3         2         1         0         
+  3     2.196019e+06   6.683713e+03   1.053616e+02   4         4         3         2         1         0         
+  4     1.566508e+06   3.232039e+03   1.431066e+02   5         5         2         2         1         0         
+  5     1.263879e+06   1.545767e+03   1.584690e+02   6         6         3         2         1         0         
+Optimization Terminated with Status: Iteration Limit Exceeded
