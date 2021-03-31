@@ -1,0 +1,103 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward
+	Title: untitled
+Current date, time: Wed Mar 31, 2021, 02:46:56
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+************************************************************************************************************************
+**  WARNING: 
+**  Invalid block id in the Block section.
+**  Found '2'.
+**  
+**  The Following blocks have been defined in the mesh:
+**    block name   block id   
+**    ----------   --------   
+**    block_1      1          
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Invalid block id in the Block section.
+**  Found '11'.
+**  
+**  The Following blocks have been defined in the mesh:
+**    block name   block id   
+**    ----------   --------   
+**    block_1      1          
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Invalid block id in the Block section.
+**  Found '12'.
+**  
+**  The Following blocks have been defined in the mesh:
+**    block name   block id   
+**    ----------   --------   
+**    block_1      1          
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Invalid block id in the Block section.
+**  Found '13'.
+**  
+**  The Following blocks have been defined in the mesh:
+**    block name   block id   
+**    ----------   --------   
+**    block_1      1          
+**  
+************************************************************************************************************************
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  simplemodel.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   876        Tet4   1          1.454302   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     17         
+  2            topnodes       17         
+  100          all_nodes      247        
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+  1            tablesurface   18         
+  2            topsurface     18         
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |          7.9 |          7.9
+        mass |           12 |           12
+There are no negative diagonal entries.
+     Dynamic |          7.9 |          7.9
+Using 'auto' solver.
+Eigenvalues:
+1: 5.89885e+08	(3865.48)
+2: 2.107e+09	(7305.54)
+3: 7.04508e+09	(13358.7)
+4: 1.60025e+10	(20133.3)
+5: 2.59498e+10	(25638.2)
+6: 3.04241e+10	(27760.6)
+7: 6.36387e+10	(40149.5)
+8: 8.91325e+10	(47515.8)
+9: 1.3621e+11	(58738.7)
+10: 1.83832e+11	(68238.7)
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 4 Warnings. Elapsed time: 0:00:00
