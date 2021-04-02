@@ -15,7 +15,7 @@ inputfile ='expmodel2-dfrf.e';
 X = 1;
 Y = 1;
 Z = 1;
-noise = 0.01;
+noise = 0.0;
 %Outputfile names
 truthtablefile = './ttable.txt';
 datafile = './dataReal.txt';
