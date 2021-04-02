@@ -55,7 +55,7 @@ BLOCK 3
     inverse_material_type = homogeneous
 END
 BLOCK 4
-    material 2
+    material 4
     inverse_material_type = homogeneous
 END
 BLOCK 5
@@ -74,6 +74,13 @@ MATERIAL 2
     nu 0.35
     density 1040
 END
+MATERIAL 4
+    E_bounds = 1 1e10
+    Nu_bounds = 0.01 0.49
+    E 22e8
+    nu 0.35
+    density 1040
+END
 MATERIAL 3
     //E 22e8
     //nu 0.35
@@ -85,7 +92,7 @@ MATERIAL 3
 END
 OUTPUTS
     disp
-    elmat
 END
 ECHO
+    elmat
 END
