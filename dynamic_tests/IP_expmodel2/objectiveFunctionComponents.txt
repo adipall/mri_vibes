@@ -1,2 +1,2 @@
-L2_Error:    3.4861026e-26
+L2_Error:    1.3002277e-03
 Regularization_Term:      None used

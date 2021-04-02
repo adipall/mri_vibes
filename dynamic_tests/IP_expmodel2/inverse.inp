@@ -86,13 +86,13 @@ MATERIAL 3
     //nu 0.35
     //E_bounds = 1 1e10
     //Nu_bounds = 0.01 0.49
-    //G_bounds = 1 1e8
+    G_bounds = 1 1e8
     K_bounds = 1 1e8
-    //G 1e4
+    G 1e4
     K 1e4
-    E 22e8
-    nu 0.35
-    density_bounds = 1 1e6
+    //E 22e8
+    //nu 0.35
+    //density_bounds = 1 1e6
     density 1040
 END
 OUTPUTS
