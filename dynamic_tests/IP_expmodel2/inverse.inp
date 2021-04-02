@@ -84,10 +84,11 @@ END
 MATERIAL 3
     //E 22e8
     //nu 0.35
-    E_bounds = 1 1e10
-    Nu_bounds = 0.01 0.49
+    //E_bounds = 1 1e10
+    //Nu_bounds = 0.01 0.49
     E 22e8
     nu 0.35
+    density_bounds = 1 1e6
     density 1040
 END
 OUTPUTS
