@@ -12,8 +12,8 @@ format long
 %****************************INPUT PARAMETERS******************
 inputfile ='expmodelNC_10-dfrf.e';
 % Measured dofs
-X = 0;
-Y = 0;
+X = 1;
+Y = 1;
 Z = 1;
 noise = 0.0;
 %Outputfile names
