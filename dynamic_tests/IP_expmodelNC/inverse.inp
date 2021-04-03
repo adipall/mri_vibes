@@ -7,7 +7,7 @@ END
 OPTIMIZATION
     ROLmethod = linesearch
     LSstep = newton-krylov
-    scaleDesignVars = yes
+    //scaleDesignVars = yes
 END
 INVERSE-PROBLEM
     data_truth_table = ttable.txt
