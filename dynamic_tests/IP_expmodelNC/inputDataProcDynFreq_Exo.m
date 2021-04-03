@@ -10,7 +10,7 @@ clc
 format long
 
 %****************************INPUT PARAMETERS******************
-inputfile ='expmodel2-dfrf.e';
+inputfile ='expmodelNC_10-dfrf.e';
 % Measured dofs
 X = 1;
 Y = 1;
