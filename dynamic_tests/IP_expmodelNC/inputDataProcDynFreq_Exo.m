@@ -12,10 +12,10 @@ format long
 %****************************INPUT PARAMETERS******************
 inputfile ='expmodelNC_10-dfrf.e';
 % Measured dofs
-X = 1;
-Y = 1;
+X = 0;
+Y = 0;
 Z = 1;
-noise = 0.01;
+noise = 0.00;
 %Outputfile names
 truthtablefile = './ttable.txt';
 datafile = './dataReal.txt';
