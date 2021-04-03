@@ -3,7 +3,7 @@ SOLUTION
         //eigen
     case invMat
         directfrf-materialid
-            solver = GDSW
+            //solver = GDSW
 END
 OPTIMIZATION
     ROLmethod = linesearch
@@ -49,11 +49,11 @@ BLOCK 2
 END
 BLOCK 3
     material 3
-    inverse_material_type = homogeneous
+    inverse_material_type = known
 END
 BLOCK 4
     material 4
-    inverse_material_type = known
+    inverse_material_type = homogeneous
 END
 MATERIAL 1
     E 22e8
