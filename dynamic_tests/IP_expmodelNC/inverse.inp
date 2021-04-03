@@ -9,6 +9,7 @@ OPTIMIZATION
     ROLmethod = linesearch
     LSstep = newton-krylov
     opt_iterations = 5
+    opt_tolerance = 1e-20
     scaleDesignVars = yes
 END
 INVERSE-PROBLEM
