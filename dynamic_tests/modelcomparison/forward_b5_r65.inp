@@ -1,5 +1,5 @@
 FILE
-    geometry_file = 'expmodelNC_10.e'
+    geometry_file = 'expmodel_b5_r65_e10.e'
 END
 SOLUTION
     case getModes
