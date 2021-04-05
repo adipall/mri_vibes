@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_b5_r80
 	Title: untitled
-Current date, time: Mon Apr 5, 2021, 18:10:14
+Current date, time: Mon Apr 5, 2021, 18:50:01
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -20,15 +20,15 @@ Input mesh:
 
   Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
   --------   ----------   -------------   --------   ----   --------   --------   
-  1          block_1      TETRAHEDRON_4   8368       Tet4   1          6.942545   
-  2          block_2      TETRAHEDRON_4   517        Tet4   1          1.345727   
-  3          block_3      TETRAHEDRON_4   1248       Tet4   1          1.505581   
-  4          block_4      TETRAHEDRON_4   524        Tet4   1          1.414300   
+  1          block_1      TETRAHEDRON_4   3356       Tet4   1          4.713503   
+  2          block_2      TETRAHEDRON_4   538        Tet4   1          8.823187   
+  3          block_3      TETRAHEDRON_4   1030       Tet4   1          1.517585   
+  4          block_4      TETRAHEDRON_4   508        Tet4   1          8.830258   
 
   Nodeset ID   Nodeset Name   Num Node   
   ----------   ------------   --------   
-  1            tablenodes     64         
-  2            topnodes       31         
+  1            tablenodes     17         
+  2            topnodes       15         
 
   Sideset ID   Sideset Name   Num Face   
   ----------   ------------   --------   
@@ -38,31 +38,31 @@ Minimum Mass Eigenvalue: 0
 Approximate Matrix infinity norm ratios
       Matrix |        Local |       Global
 ==========================================
-   stiffness |           59 |           59
-        mass |      5.9e+02 |      5.9e+02
+   stiffness |           54 |           54
+        mass |      7.2e+03 |      7.2e+03
 There are no negative diagonal entries.
-     Dynamic |           59 |           59
+     Dynamic |           54 |           54
 Using 'auto' solver.
 Eigenvalues:
-1: -4.94568e-06	(-0.000353943)
-2: -1.0602e-06	(-0.000163876)
-3: 6.82688e-07	(0.000131502)
-4: 2.20924e-06	(0.00023656)
-5: 4.23901e-06	(0.000327682)
-6: 5.17019e-06	(0.000361887)
-7: 2.19448e+08	(2357.69)
-8: 2.22431e+08	(2373.66)
-9: 2.80015e+08	(2663.24)
-10: 4.41837e+08	(3345.42)
+1: -4.92598e-06	(-0.000353237)
+2: -3.94436e-06	(-0.000316088)
+3: -2.3324e-06	(-0.000243064)
+4: -1.79148e-06	(-0.000213023)
+5: 5.72256e-06	(0.000380729)
+6: 1.02891e-05	(0.000510516)
+7: 2.33718e+08	(2433.13)
+8: 2.58586e+08	(2559.31)
+9: 2.76903e+08	(2648.4)
+10: 4.68852e+08	(3446.18)
 ************************************************************************************************************************
 **  WARNING: 
 **  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
 **  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
 **  solver to accurately compute a solution.
-**  Eigenvalue of First Elastic Mode = 219447847.827479
+**  Eigenvalue of First Elastic Mode = 233717788.190748
 **  Shift= -1.000000
 **  
 ************************************************************************************************************************
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:02
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:00

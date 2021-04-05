@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_b5_r65
 	Title: untitled
-Current date, time: Mon Apr 5, 2021, 18:09:35
+Current date, time: Mon Apr 5, 2021, 18:49:36
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -16,56 +16,53 @@ Solver 'undefined' selected by user input for analysis of case 'getModes'.
 Solver 'undefined' selected by user input for analysis of case 'dfrf'.
 ================================== MESH PROPERTIES =====================================
 Input mesh: 
-  expmodelNC_10.e
+  expmodel_b5_r65_e10.e
 
   Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
   --------   ----------   -------------   --------   ----   --------   --------   
-  1          block_1      TETRAHEDRON_4   29676      Tet4   1          7.820681   
-  2          block_2      TETRAHEDRON_4   637        Tet4   1          1.421846   
-  3          block_3      TETRAHEDRON_4   1031       Tet4   1          1.361843   
-  4          block_4      TETRAHEDRON_4   603        Tet4   1          1.327578   
+  1          block_1      TETRAHEDRON_4   3334       Tet4   1          4.712115   
+  2          block_2      TETRAHEDRON_4   613        Tet4   1          1.469863   
+  3          block_3      TETRAHEDRON_4   998        Tet4   1          1.376217   
+  4          block_4      TETRAHEDRON_4   610        Tet4   1          1.275905   
 
   Nodeset ID   Nodeset Name   Num Node   
   ----------   ------------   --------   
-  1            tablenodes     148        
-  2            topnodes       65         
-  100          allnodes       6529       
+  1            tablenodes     17         
+  2            topnodes       15         
 
   Sideset ID   Sideset Name   Num Face   
   ----------   ------------   --------   
-  1            tablesurface   250        
-  2            topsurface     102        
 =======================================================================================
 we found 0 local rigid link constraint equations.
 Minimum Mass Eigenvalue: 0
 Approximate Matrix infinity norm ratios
       Matrix |        Local |       Global
 ==========================================
-   stiffness |           62 |           62
-        mass |        2e+02 |        2e+02
+   stiffness |           55 |           55
+        mass |      9.4e+03 |      9.4e+03
 There are no negative diagonal entries.
-     Dynamic |           62 |           62
+     Dynamic |           55 |           55
 Using 'auto' solver.
 Eigenvalues:
-1: 4.29184e-07	(0.000104266)
-2: 2.30586e-06	(0.000241678)
-3: 5.7471e-06	(0.000381544)
-4: 7.96195e-06	(0.000449086)
-5: 1.8247e-05	(0.000679853)
-6: 2.58151e-05	(0.000808644)
-7: 2.00733e+08	(2254.91)
-8: 2.09577e+08	(2304.05)
-9: 4.07312e+08	(3212.06)
-10: 6.41609e+08	(4031.4)
+1: -5.90155e-06	(-0.000386637)
+2: -5.57815e-06	(-0.000375894)
+3: -3.44656e-06	(-0.00029547)
+4: -5.78479e-07	(-0.00012105)
+5: -4.53782e-07	(-0.000107212)
+6: 1.63631e-06	(0.000203588)
+7: 2.38605e+08	(2458.44)
+8: 2.59679e+08	(2564.71)
+9: 4.73508e+08	(3463.25)
+10: 6.49039e+08	(4054.67)
 ************************************************************************************************************************
 **  WARNING: 
 **  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
 **  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
 **  solver to accurately compute a solution.
-**  Eigenvalue of First Elastic Mode = 200732508.330358
+**  Eigenvalue of First Elastic Mode = 238605043.128852
 **  Shift= -1.000000
 **  
 ************************************************************************************************************************
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:14
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:01

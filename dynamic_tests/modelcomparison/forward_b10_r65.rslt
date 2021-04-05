@@ -8,27 +8,61 @@ Number of mpi ranks: 1
 
 Input file: forward_b10_r65
 	Title: untitled
-Current date, time: Mon Apr 5, 2021, 18:09:00
+Current date, time: Mon Apr 5, 2021, 18:49:19
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
 Solver 'undefined' selected by user input for analysis of case 'getModes'.
 Solver 'undefined' selected by user input for analysis of case 'dfrf'.
-************************************************************************************************************************
-**  FATAL USER INPUT ERROR: 
-**  Could not find user input corresponding to element block 'block_6 with id '6'
-**  The following blocks have been defined in the input deck:  
-**    Block Name   Block Id   Input Deck Name   
-**    ----------   --------   ---------------   
-**    block_1      1          1                 
-**    block_2      2          2                 
-**    block_3      3          3                 
-**    block_4      4          4                 
-**  
-************************************************************************************************************************
-Salinas - page 2                               Mon Apr  5 18:09:00 2021
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_b10_r65_e10.e
 
+  Block ID   Block Name     Topology      Num Elem   Type   Material    Quality    
+  --------   ----------   -------------   --------   ----   --------   ---------   
+  1          block_1      TETRAHEDRON_4   2115       Tet4   1          4.690039    
+  2          block_2      TETRAHEDRON_4   307        Tet4   1          1.368439    
+  3          block_3      TETRAHEDRON_4   371        Tet4   1          10.536649   
+  4          block_4      TETRAHEDRON_4   328        Tet4   1          1.418468    
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     17         
+  2            topnodes       14         
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           28 |           28
+        mass |      1.5e+03 |      1.5e+03
+There are no negative diagonal entries.
+     Dynamic |           28 |           28
+Using 'auto' solver.
+Eigenvalues:
+1: -3.30427e-06	(-0.000289306)
+2: 2.99983e-07	(8.71702e-05)
+3: 7.84609e-07	(0.000140977)
+4: 2.09305e-06	(0.000230255)
+5: 3.02509e-06	(0.000276815)
+6: 4.93085e-06	(0.000353412)
+7: 2.44135e+08	(2486.77)
+8: 2.83396e+08	(2679.27)
+9: 5.73433e+08	(3811.2)
+10: 1.09606e+09	(5269.12)
 ************************************************************************************************************************
 **  WARNING: 
-**  Aborted from processor 0
+**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
+**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
+**  solver to accurately compute a solution.
+**  Eigenvalue of First Elastic Mode = 244135182.178712
+**  Shift= -1.000000
+**  
 ************************************************************************************************************************
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:00
