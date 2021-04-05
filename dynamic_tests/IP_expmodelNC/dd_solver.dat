@@ -1,0 +1,69 @@
+Notice: single processor solver parameters may overide those specified for parallel runs
+******************************************************************
+--- domain decomposition solver summary ---
+preconditioner                   = GDSW
+Helmholtz preconditioning option = Operator-Damped
+preconditioner update freq       = 10
+Krylov method                    = Right GMRES (gmresClassic)
+solver option                    = Pardiso
+number of processors             = 1
+total number of unknowns         = 19587
+minimum subdomain size           = 19587
+maximum subdomain size           = 19587
+number of Type 1 constraints     = 0
+number of Type 2 constraints     = 0
+max slaves for master dof        = -1
+overlap                          = 0
+using interface preconditioner   = no
+coarse correction                = none
+solver tolerance                 = 1e-06
+maximum number of iterations     = 1000
+maximum number of restarts       = 1
+maximum stored directions        = 20
+stored direction cull method     = simple
+solving scaled problem           = no
+operator diagonal magnitudes ---
+min                              = 2.42843e+06
+max                              = 1.50352e+08
+max/min                          = 61.9131
+Rigid Body Norm for Mode 1       = 3.73621e-11
+Rigid Body Norm for Mode 2       = 3.73621e-11
+Rigid Body Norm for Mode 3       = 3.73621e-11
+Rigid Body Norm for Mode 4       = 3.7118e-11
+Rigid Body Norm for Mode 5       = 3.69259e-11
+Rigid Body Norm for Mode 6       = 3.5301e-11
+maximum overlap rows             = 0
+coarse space type                = large
+number of coarse levels          = 0
+solver initialization time       = 0.714089 seconds
+                           Recursive      Actual
+                            Relative    Relative
+Solve  Iter  Total  Avg     Residual    Residual     CPU (s)   Total (s)      Avg (s)
+    1     2      2    2  1.79635e-08 2.04557e-08   0.0802681   0.0802681    0.0802681
+    2     0      2    1   1.8812e-08 1.87882e-08  0.00261188     0.08288      0.04144
+    3     2      4    1  3.71255e-08 3.74268e-08    0.077734    0.160614     0.053538
+    4     2      6    1  1.84017e-11 3.15891e-11    0.083576     0.24419    0.0610475
+    5     1      7    1  2.42128e-08 2.42128e-08    0.052299    0.296489    0.0592978
+    6     0      7    1  1.29706e-08 1.32376e-08   0.0193691    0.315858     0.052643
+    7     0      7    1  1.07238e-08 1.09753e-08    0.019237    0.335095    0.0478707
+    8     0      7    0  1.07217e-08  1.0988e-08    0.020422    0.355517    0.0444396
+    9     0      7    0  1.07204e-08  1.1036e-08   0.0193141    0.374831    0.0416479
+   10     0      7    0  1.07213e-08 1.08886e-08    0.019083    0.393914    0.0393914
+   11     0      7    0  1.07194e-08  1.0978e-08   0.0194042    0.413318    0.0375744
+   12     0      7    0  1.07195e-08 1.09343e-08     0.01915    0.432468     0.036039
+   13     0      7    0  1.07183e-08 1.09917e-08   0.0192621     0.45173    0.0347485
+   14     0      7    0  1.07169e-08 1.10133e-08   0.0194569    0.471187    0.0336562
+   15     0      7    0  1.07151e-08 1.10524e-08    0.021662    0.492849    0.0328566
+   16     0      7    0  1.07133e-08 1.10014e-08   0.0211799    0.514029    0.0321268
+   17     0      7    0  1.07184e-08 1.10241e-08   0.0201409     0.53417    0.0314218
+   18     0      7    0  1.07137e-08 1.10844e-08    0.019382    0.553552    0.0307529
+   19     0      7    0  1.07055e-08 1.09435e-08    0.019305    0.572857    0.0301504
+   20     0      7    0  1.07055e-08 1.09435e-08  0.00317693    0.576034    0.0288017
+   21     0      7    0  1.07055e-08 1.09435e-08  0.00312591     0.57916     0.027579
+   22     0      7    0  1.07055e-08 1.09435e-08  0.00314593    0.582306    0.0264685
+   23     0      7    0  1.07055e-08 1.09435e-08  0.00333881    0.585645    0.0254628
+   24     0      7    0  1.07055e-08 1.09435e-08  0.00324893    0.588894    0.0245372
+   25     0      7    0  1.07055e-08 1.09435e-08  0.00318909    0.592083    0.0236833
+   26     0      7    0  1.07055e-08 1.09435e-08  0.00310802    0.595191     0.022892
+   27     0      7    0  2.71529e-09 4.21093e-09  0.00312495    0.598316    0.0221598
+total time for orthogonalization (seconds)      = 0.273325

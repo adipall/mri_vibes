@@ -1,0 +1,78 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward_b5_r40
+	Title: untitled
+Current date, time: Mon Apr 5, 2021, 18:09:59
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+************************************************************************************************************************
+**  WARNING: 
+**  Element 10469 in block 3 is tagged as 'bad'.
+**  
+************************************************************************************************************************
+************************************************************************************************************************
+**  WARNING: 
+**  Element 10474 in block 3 is tagged as 'bad'.
+**  
+************************************************************************************************************************
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_b5_r40_e10.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material      Quality       
+  --------   ----------   -------------   --------   ----   --------   --------------   
+  1          block_1      TETRAHEDRON_4   8482       Tet4   1          6.942115         
+  2          block_2      TETRAHEDRON_4   800        Tet4   1          1.585255         
+  3          block_3      TETRAHEDRON_4   516        Tet4   1          1000000.000000   
+  4          block_4      TETRAHEDRON_4   820        Tet4   1          1.478276         
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     64         
+  2            topnodes       31         
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           55 |           55
+        mass |      7.4e+02 |      7.4e+02
+There are no negative diagonal entries.
+     Dynamic |           55 |           55
+Using 'auto' solver.
+Eigenvalues:
+1: -1.19783e-05	(-0.00055083)
+2: -8.7094e-06	(-0.000469693)
+3: -6.78599e-06	(-0.000414597)
+4: -7.50797e-07	(-0.000137905)
+5: 1.72212e-06	(0.000208859)
+6: 6.76868e-06	(0.000414068)
+7: 2.23146e+08	(2377.47)
+8: 2.24781e+08	(2386.16)
+9: 4.43748e+08	(3352.65)
+10: 9.51902e+08	(4910.39)
+************************************************************************************************************************
+**  WARNING: 
+**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
+**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
+**  solver to accurately compute a solution.
+**  Eigenvalue of First Elastic Mode = 223145658.069509
+**  Shift= -1.000000
+**  
+************************************************************************************************************************
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 3 Warnings. Elapsed time: 0:00:02
