@@ -8,8 +8,8 @@ SOLUTION
         directfrf
 END
 FREQUENCY
-    freq_min 5
-    freq_max 30
+    freq_min 15
+    freq_max 15
     freq_step 5
     block all
     disp
