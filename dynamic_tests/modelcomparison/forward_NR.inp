@@ -29,15 +29,6 @@ END
 BLOCK 1
     material 1
 END
-BLOCK 2
-    material 1
-END
-BLOCK 3
-    material 1
-END
-BLOCK 4
-    material 1
-END
 MATERIAL 1
     E 22e8
     nu 0.35
