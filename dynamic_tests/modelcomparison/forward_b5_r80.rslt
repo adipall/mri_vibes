@@ -8,7 +8,7 @@ Number of mpi ranks: 1
 
 Input file: forward_b5_r80
 	Title: untitled
-Current date, time: Mon Apr 5, 2021, 18:50:01
+Current date, time: Mon Apr 5, 2021, 19:12:55
 
 
 Solver 'undefined' selected by user input for analysis of case 'default'.
@@ -65,4 +65,4 @@ Eigenvalues:
 ************************************************************************************************************************
 Using 'superlu' solver.
 ================================================================================
-Salinas Complete. 1 Warnings. Elapsed time: 0:00:00
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:01
