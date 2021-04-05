@@ -1,5 +1,5 @@
 FILE
-    geometry_file = 'expmodel_b10_r80_e10.e'
+    geometry_file = 'expmodel2_b10_r80_e10.e'
 END
 SOLUTION
     case getModes
@@ -33,9 +33,6 @@ BLOCK 2
     material 1
 END
 BLOCK 3
-    material 1
-END
-BLOCK 4
     material 1
 END
 MATERIAL 1
