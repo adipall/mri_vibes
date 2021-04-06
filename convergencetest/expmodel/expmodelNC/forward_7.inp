@@ -1,5 +1,5 @@
 FILE
-    geometry_file = 'expmodelNC_25.e'
+    geometry_file = 'expmodelNC_7.e'
 END
 SOLUTION
     case getModes
@@ -8,8 +8,8 @@ SOLUTION
         directfrf
 END
 FREQUENCY
-    freq_min 5
-    freq_max 30
+    freq_min 15
+    freq_max 15
     freq_step 5
     block all
     disp
