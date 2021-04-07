@@ -1,0 +1,68 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward_5
+	Title: untitled
+Current date, time: Wed Apr 7, 2021, 03:05:49
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodelNC_5.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material    Quality    
+  --------   ----------   -------------   --------   ----   --------   ---------   
+  1          block_1      TETRAHEDRON_4   100731     Tet4   1          16.934399   
+  2          block_2      TETRAHEDRON_4   637        Tet4   1          1.445300    
+  3          block_3      TETRAHEDRON_4   1551       Tet4   1          1.415990    
+  4          block_4      TETRAHEDRON_4   611        Tet4   1          1.653255    
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     312        
+  2            topnodes       142        
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           76 |           76
+        mass |      1.1e+02 |      1.1e+02
+There are no negative diagonal entries.
+     Dynamic |           76 |           76
+Using 'auto' solver.
+Eigenvalues:
+1: -1.1657e-05	(-0.000543392)
+2: -5.86947e-06	(-0.000385585)
+3: -3.16502e-06	(-0.000283144)
+4: 1.30648e-07	(5.75269e-05)
+5: 6.4642e-06	(0.000404648)
+6: 1.91753e-05	(0.000696933)
+7: 1.88928e+08	(2187.6)
+8: 2.0282e+08	(2266.61)
+9: 3.80638e+08	(3105.1)
+10: 6.1642e+08	(3951.47)
+************************************************************************************************************************
+**  WARNING: 
+**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
+**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
+**  solver to accurately compute a solution.
+**  Eigenvalue of First Elastic Mode = 188927929.856165
+**  Shift= -1.000000
+**  
+************************************************************************************************************************
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 1 Warnings. Elapsed time: 0:02:27
