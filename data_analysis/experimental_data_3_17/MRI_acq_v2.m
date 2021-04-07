@@ -18,6 +18,7 @@ F_1 = T{:,2};
 F_2 = T{:,3};
 
 shift = t(1); % changes relative time to a more comprehensible start from 0.0s
+
 if shift >= 0
     shift = -1*shift;
     t(:) = t(:) + shift;
