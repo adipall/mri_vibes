@@ -33,7 +33,7 @@ BLOCK 2
     material 1
 END
 BLOCK 3
-    material 1
+    material 2
 END
 BLOCK 4
     material 1
@@ -42,6 +42,11 @@ MATERIAL 1
     E 22e8
     nu 0.35
     density 1040
+END
+MAterial 2
+  E 22e8
+    nu 0.35
+    density 7000
 END
 OUTPUTS
     disp
