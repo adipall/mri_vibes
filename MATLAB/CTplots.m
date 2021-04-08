@@ -19,10 +19,10 @@ figure;clf;
 subplot(2,1,1)
 plot(numelems(1:end-1),avgydiff, 'ko-')
 xlabel('Total Number of Elements', 'interpreter', 'latex')
-ylabel('Normalized Z-Displacement', 'interpreter','latex')
+ylabel('Average Normalized Z-Displacement', 'interpreter','latex')
 grid on
 subplot(2,1,2)
 plot(numelems(1:end-1),maxydiff, 'ko-')
 xlabel('Total Number of Elements', 'interpreter', 'latex')
-ylabel('Normalized Z-Displacement', 'interpreter','latex')
+ylabel('Maximum Normalized Z-Displacement', 'interpreter','latex')
 grid on
