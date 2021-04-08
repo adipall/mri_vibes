@@ -1,0 +1,80 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward1
+	Title: untitled
+Current date, time: Thu Apr 8, 2021, 02:26:34
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'getModes'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_b5_r65_e10.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material   Quality    
+  --------   ----------   -------------   --------   ----   --------   --------   
+  1          block_1      TETRAHEDRON_4   3334       Tet4   1          4.712115   
+  2          block_2      TETRAHEDRON_4   613        Tet4   1          1.469863   
+  3          block_3      TETRAHEDRON_4   998        Tet4   2          1.376217   
+  4          block_4      TETRAHEDRON_4   610        Tet4   1          1.275905   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     17         
+  2            topnodes       15         
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+
+Salinas - page 2                               Thu Apr  8 02:26:35 2021
+
+================================= MASS PROPERTIES ===========================
+Total Mass of Structure is 0.0904826
+CG of Total Mass:
+	  1.1104e-07 	 -1.1923e-07 	   0.0041948
+Moment of inertia tensor about global origin (x=0,y=0,z=0):
+	   7.573e-05 	 -9.7425e-11 	  4.0095e-10
+	 -9.7425e-11 	  9.3328e-05 	  -2.682e-10
+	  4.0095e-10 	  -2.682e-10 	  2.3442e-05
+=============================================================================
+Approximate Matrix infinity norm ratios
+      Matrix |        Local |       Global
+==========================================
+   stiffness |           55 |           55
+        mass |      9.4e+03 |      9.4e+03
+There are no negative diagonal entries.
+     Dynamic |           55 |           55
+Using 'auto' solver.
+Eigenvalues:
+1: -6.3474e-06	(-0.000400976)
+2: -5.60113e-06	(-0.000376667)
+3: -3.8595e-06	(-0.00031267)
+4: -1.94954e-07	(-7.02726e-05)
+5: 3.92518e-07	(9.97125e-05)
+6: 1.45626e-06	(0.000192061)
+7: 2.11495e+08	(2314.57)
+8: 2.2782e+08	(2402.24)
+9: 2.59549e+08	(2564.07)
+10: 2.88936e+08	(2705.33)
+************************************************************************************************************************
+**  WARNING: 
+**  The shift in the solution block is at least 3 orders of magnitude different than first elastic mode.  The shift
+**  should be approximately equal in magnitude to the negative of the first elastic mode for the parallel dynamics
+**  solver to accurately compute a solution.
+**  Eigenvalue of First Elastic Mode = 211494790.378773
+**  Shift= -1.000000
+**  
+************************************************************************************************************************
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 1 Warnings. Elapsed time: 0:00:01

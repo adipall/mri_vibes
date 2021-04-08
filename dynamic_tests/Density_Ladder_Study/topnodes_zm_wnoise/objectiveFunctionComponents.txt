@@ -1,2 +1,0 @@
-L2_Error:    1.1606267e-04
-Regularization_Term:      None used
