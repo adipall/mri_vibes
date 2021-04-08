@@ -43,8 +43,8 @@ MATERIAL 1
     nu 0.35
     density 1040
 END
-MAterial 2
-  E 22e8
+MATERIAL 2
+    E 22e8
     nu 0.35
     density 5150
 END

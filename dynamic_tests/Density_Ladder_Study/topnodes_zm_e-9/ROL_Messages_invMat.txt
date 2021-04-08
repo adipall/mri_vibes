@@ -1,8 +1,0 @@
-
-Newton-Krylov using Conjugate Gradients
-Line Search: Cubic Interpolation satisfying Strong Wolfe Conditions
-  iter  value          gnorm          snorm          #fval     #grad     iterCG    flagCG    ls_#fval  ls_#grad  
-  0     4.999990e+11   6.756088e+04   
-  1     4.999989e+11   5.746211e-02   1.427717e+04   4         2         1         2         3         0         
-  2     1.283434e+11   9.919403e-11   6.313661e+10   5         3         4         2         1         0         
-Optimization Terminated with Status: Converged
