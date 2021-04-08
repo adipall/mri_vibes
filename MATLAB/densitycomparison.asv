@@ -15,9 +15,9 @@ disp = disp*1e-4;
 figure(); clf;
 plot3(beam_rad,ball_rad,disp,'r*')
 hold on
-plot3([10e-3 2e-3],[4e-3 8e-3],[min(disp) min(disp)],'k--')
-plot3([2e-3 10e-3],[8e-3 4e-3],[max(disp) max(disp)],'k--')
-% zline(max(disp))
+% plot3([10 2],[4 8],[min(disp) min(disp)],'k--')
+% plot3([2 10],[8 4],[max(disp) max(disp)],'k--')
+zline(max(disp
 xlabel('beam radius (m)')
 ylabel('mass radius (m)')
 zlabel('displacement (m)')
