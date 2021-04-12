@@ -2,8 +2,6 @@ FILE
     geometry_file = 'expmodel_b5_r65_e103.e'
 END
 SOLUTION
-    \\case getModes
-        \\eigen
     case dfrf
         directfrf
 END

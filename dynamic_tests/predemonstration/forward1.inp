@@ -2,8 +2,6 @@ FILE
     geometry_file = 'expmodelNR_e111.e'
 END
 SOLUTION
-    \\case getModes
-        \\eigen
     case dfrf
         directfrf
 END
@@ -27,15 +25,6 @@ FUNCTION 1
     data 1e6 1
 END
 BLOCK 1
-    material 1
-END
-BLOCK 2
-    material 1
-END
-BLOCK 3
-    material 1
-END
-BLOCK 4
     material 1
 END
 MATERIAL 1

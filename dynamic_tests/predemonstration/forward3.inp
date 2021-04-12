@@ -2,8 +2,6 @@ FILE
     geometry_file = 'expmodel_b10_r80_e104.e'
 END
 SOLUTION
-    \\case getModes
-        \\eigen
     case dfrf
         directfrf
 END

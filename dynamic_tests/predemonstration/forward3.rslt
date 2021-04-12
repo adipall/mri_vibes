@@ -1,0 +1,51 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward3
+	Title: untitled
+Current date, time: Mon Apr 12, 2021, 02:15:49
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_b10_r80_e104.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material    Quality    
+  --------   ----------   -------------   --------   ----   --------   ---------   
+  1          block_1      TETRAHEDRON_4   100425     Tet4   1          16.934399   
+  2          block_2      TETRAHEDRON_4   925        Tet4   1          19.672497   
+  3          block_3      TETRAHEDRON_4   2497       Tet4   1          1.386024    
+  4          block_4      TETRAHEDRON_4   950        Tet4   1          20.017257   
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     312        
+  2            topnodes       142        
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+
+Salinas - page 2                               Mon Apr 12 02:15:54 2021
+
+================================= MASS PROPERTIES ===========================
+Total Mass of Structure is 0.0901153
+CG of Total Mass:
+	 -2.5854e-09 	 -1.4685e-08 	    0.004313
+Moment of inertia tensor about global origin (x=0,y=0,z=0):
+	  7.5447e-05 	  -2.358e-12 	 -3.2989e-12
+	  -2.358e-12 	   9.314e-05 	 -5.8232e-11
+	 -3.2989e-12 	 -5.8232e-11 	  2.3542e-05
+=============================================================================
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:22:28

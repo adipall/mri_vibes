@@ -1,0 +1,52 @@
+Salinas version: 4.52.2
+Build date: 2019-06-05 19:26:46Z
+Build platform: cee-build011
+Build OS:  Linux 2.6.32-696.1.1.el6.x86_64
+Build compiler:  intel-17.0.1 release
+
+Number of mpi ranks: 1
+
+Input file: forward5
+	Title: untitled
+Current date, time: Mon Apr 12, 2021, 02:16:33
+
+
+Solver 'undefined' selected by user input for analysis of case 'default'.
+Solver 'undefined' selected by user input for analysis of case 'dfrf'.
+================================== MESH PROPERTIES =====================================
+Input mesh: 
+  expmodel_b10_r80_square_e104.e
+
+  Block ID   Block Name     Topology      Num Elem   Type   Material    Quality    
+  --------   ----------   -------------   --------   ----   --------   ---------   
+  1          block_1      TETRAHEDRON_4   100433     Tet4   1          16.934858   
+  2          block_2      TETRAHEDRON_4   924        Tet4   1          19.449548   
+  3          block_3      TETRAHEDRON_4   1709       Tet4   1          1.466574    
+  4          block_4      TETRAHEDRON_4   940        Tet4   1          20.017258   
+  5          block_5      TETRAHEDRON_4   734        Tet4   2          1.507305    
+
+  Nodeset ID   Nodeset Name   Num Node   
+  ----------   ------------   --------   
+  1            tablenodes     312        
+  2            topnodes       142        
+
+  Sideset ID   Sideset Name   Num Face   
+  ----------   ------------   --------   
+=======================================================================================
+we found 0 local rigid link constraint equations.
+Minimum Mass Eigenvalue: 0
+
+Salinas - page 2                               Mon Apr 12 02:16:39 2021
+
+================================= MASS PROPERTIES ===========================
+Total Mass of Structure is 0.0956923
+CG of Total Mass:
+	 -2.1544e-08 	 -9.2159e-09 	   0.0031437
+Moment of inertia tensor about global origin (x=0,y=0,z=0):
+	  7.6953e-05 	 -2.2383e-12 	 -3.4013e-11
+	 -2.2383e-12 	  9.4557e-05 	 -7.7284e-11
+	 -3.4013e-11 	 -7.7284e-11 	  2.3664e-05
+=============================================================================
+Using 'superlu' solver.
+================================================================================
+Salinas Complete. 0 Warnings. Elapsed time: 0:23:10
