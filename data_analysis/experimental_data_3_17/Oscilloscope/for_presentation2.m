@@ -40,9 +40,9 @@ subplot(1,3,1)
 plot(fFreqs,F_shifted)
 xlim([0,500])
 ylim([0,0.01])
-xlabel('Frequencies (Hz)')
-ylabel('Amplitude (V)')
-title('Specimen Tube')
+xlabel('Frequencies (Hz)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Specimen Tube','fontsize',16)
 
 %% read in best table voltage file
 fname = "acq0009.csv"; 
@@ -81,9 +81,9 @@ subplot(1,3,2)
 plot(fFreqs,F_shifted)
 xlim([0,500])
 ylim([0,0.01])
-xlabel('Frequencies (Hz)')
-ylabel('Amplitude (V)')
-title('Table')
+xlabel('Frequencies (Hz)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Table','fontsize',16)
 
 %%
 % read in best bore voltage file
@@ -123,9 +123,9 @@ subplot(1,3,3)
 plot(fFreqs,F_shifted)
 xlim([0,500])
 ylim([0,0.01])
-xlabel('Frequencies (Hz)')
-ylabel('Amplitude (V)')
-title('Bore')
+xlabel('Frequencies (Hz)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Bore','fontsize',16)
 
 
 

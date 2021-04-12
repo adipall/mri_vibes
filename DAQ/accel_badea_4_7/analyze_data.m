@@ -4,7 +4,7 @@ close all
 clc
 
 % read in voltage file
-fname = "test_full_0001.csv"; 
+fname = "test_two_0017.csv"; 
 T = readtable(fname);
 t = T{:,1};
 V1 = T{:,2};
