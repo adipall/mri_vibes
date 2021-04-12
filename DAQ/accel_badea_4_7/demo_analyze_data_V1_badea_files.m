@@ -3,11 +3,8 @@ clear;
 close all
 clc
 
-%% Read in voltage file
-fname = "test_full_0001.csv"; 
-
 %% read in voltage file
-% fname = "test_two_0017.csv"; 
+fname = "test_two_0017.csv"; 
 
 T = readtable(fname);
 t = T{:,1};
@@ -55,7 +52,7 @@ response = max(F_shifted);
 % throw out noise at 0 freq
 fFreqs(1) = 0;
 F_shifted(1) = 0;
-[pks, locs] = findpeaks(F_shifted,'MinPeakProminence',0.01);
+[pks, locs] = findpeaks(F_shifted,'MinPeakProminence',0.9E-3);
 
 figure(1)
 subplot(1,2,2)
@@ -67,6 +64,8 @@ for i = 1:size(locs,1)
     str_loc{i} = append(num2str(fFreqs(locs(i))),' Hz')
 end
 text(fFreqs(locs)+30,F_shifted(locs),str_loc)
+% str_loc = append(a,' Hz')
+% text(fFreqs(locs)+30,F_shifted(locs),str_loc)
 % text(locs+.02,peaks,num2str((1:numel(peaks))'))
 xlabel('Frequencies (Hz)')
 ylabel('Amplitude (V)')
