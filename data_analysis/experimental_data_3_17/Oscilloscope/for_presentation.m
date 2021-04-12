@@ -20,10 +20,10 @@ subplot(1,3,1)
 plot(t,[V1,V2])
 hold on
 xlim([0,t_end])
-legend('Z-axis', 'X-axis','location','best')
-xlabel('Time (s)')
-ylabel('Amplitude (V)')
-title('Specimen Tube')
+legend('Z-axis', 'X-axis','location','best','fontsize',10,'interpreter','latex')
+xlabel('Time (s)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Specimen Tube','fontsize',16)
 
 % read in best table voltage file
 fname = "acq0009.csv"; 
@@ -40,10 +40,10 @@ t_end = t(end_loc);
 subplot(1,3,2)
 plot(t,[V1,V2])
 xlim([0,t_end])
-legend('Z-axis', 'X-axis','location','best')
-xlabel('Time (s)')
-ylabel('Amplitude (V)')
-title('Table')
+legend('Z-axis', 'X-axis','location','best','fontsize',10,'interpreter','latex')
+xlabel('Time (s)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Table','fontsize',16)
 
 % read in best bore voltage file
 fname = "acq0066.csv"; 
@@ -60,10 +60,10 @@ t_end = t(end_loc);
 subplot(1,3,3)
 plot(t,[V1,V2])
 xlim([0,t_end])
-legend('Z-axis', 'X-axis','location','best')
-xlabel('Time (s)')
-ylabel('Amplitude (V)')
-title('Bore')
+legend('Z-axis', 'X-axis','location','best','fontsize',10,'interpreter','latex')
+xlabel('Time (s)','fontsize',14,'interpreter','latex')
+ylabel('Amplitude (V)','fontsize',14,'interpreter','latex')
+title('Bore','fontsize',16)
 
 %%
 
