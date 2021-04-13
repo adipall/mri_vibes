@@ -4,12 +4,22 @@ close all
 clc
 
 %% MAIN
-% fname = "test_two_0017.csv"; % Badea-type file
-fname = "NR_30Hz_001";
+% 30 Hz testers
+% fname = "NR_30Hz_001";
 % fname = "b5_r65_30Hz_001";
 % fname = "b10_r80_30Hz_001";
-% prominence for Badea-type files - MAY NEED TO PLAY AROUND WITH THIS VALUE
-%prom = 0.9E-3;
+
+% 45 Hz testers
+% fname = "NR_45Hz_001";
+% fname = "b5_r65_45Hz_001";
+% fname = "b10_r80_45Hz_001";
+
+% 60 Hz testers
+% fname = "NR_60Hz_001";
+% fname = "b5_r65_60Hz_001";
+fname = "b10_r80_60Hz_001";
+
+
 
 % prominence for Oscillator-type files - should be safe val, but can tweak
 prom = 0.01;
