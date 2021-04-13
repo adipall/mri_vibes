@@ -61,12 +61,11 @@ hold on
 grid on
 semilogx(fFreqs(locs),F_shifted(locs),'o')
 for i = 1:size(locs,1)
-    str_loc{i} = append(num2str(fFreqs(locs(i))),' Hz')
+    str_txt{i} = append(num2str(fFreqs(locs(i))),' Hz')
+    shift_text(i) = fFreqs(locs(i))/4 % adjusts text position given frequency location (can't be uniform)
 end
-text(fFreqs(locs)+30,F_shifted(locs),str_loc)
-% str_loc = append(a,' Hz')
-% text(fFreqs(locs)+30,F_shifted(locs),str_loc)
-% text(locs+.02,peaks,num2str((1:numel(peaks))'))
+text(fFreqs(locs)+shift_text',F_shifted(locs),str_txt)
+
 xlabel('Frequencies (Hz)')
 ylabel('Amplitude (V)')
 set(findall(gcf,'-property','FontSize'),'FontSize',14)
