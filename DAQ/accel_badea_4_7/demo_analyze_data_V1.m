@@ -66,18 +66,11 @@ semilogx(fFreqs(locs),F_shifted(locs),'o')
 for i = 1:size(locs,1)
     str_loc{i} = append(num2str(fFreqs(locs(i))),' Hz')
 end
-text(fFreqs(locs)+20,F_shifted(locs),str_loc)
+text(fFreqs(locs)+0,F_shifted(locs),str_loc)
 % text(locs+.02,peaks,num2str((1:numel(peaks))'))
 xlabel('Frequencies (Hz)')
 ylabel('Amplitude (V)')
 set(findall(gcf,'-property','FontSize'),'FontSize',14)
 xlim([0,500]) % modify this, if you think there may be data past 500 Hz
-
-% function peaks = plotter(x,y)
-% 
-% 
-%
-% end
-
 
 
