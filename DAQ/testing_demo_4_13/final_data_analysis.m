@@ -4,14 +4,15 @@ close all
 clc
 
 %% MAIN
-fname = "test_two_0017.csv"; % Badea-type file
-% fname = "test_full_0001.csv"; % Oscillator-type file
-
+% fname = "test_two_0017.csv"; % Badea-type file
+fname = "NR_30Hz_001";
+% fname = "b5_r65_30Hz_001";
+% fname = "b10_r80_30Hz_001";
 % prominence for Badea-type files - MAY NEED TO PLAY AROUND WITH THIS VALUE
-prom = 0.9E-3;
+%prom = 0.9E-3;
 
 % prominence for Oscillator-type files - should be safe val, but can tweak
-% prom = 0.01;
+prom = 0.01;
 
 run_funcs(fname,prom)
 
@@ -20,11 +21,12 @@ function run_funcs(fname,prom)
 % Read data and do FFT calcs
 read_data(fname)
 % Run plotting code
-plotter(prom)
+plotter(prom,fname)
 end
 
 function read_data(fname)
-T = readtable(fname);
+fname_read = append(fname,".csv");
+T = readtable(fname_read);
 t = T{:,1};
 V1 = T{:,2}; % x-axis
 V2 = T{:,3}; % z-axis
@@ -33,15 +35,15 @@ shift = t(1); % changes relative time to a more comprehensible start from 0.0s
 t(:) = t(:) + abs(shift);
 
 tspan = t(end)-t(1);
-ns = length(V1);
+ns = length(V2);
 srate = ns/tspan;
 
 %% FFT
 Fs = srate; % Sampling frequency
 % Perform fft
-F = fft(V1);
+F = fft(V2);
 % Length of fft
-L = length(V1);
+L = length(V2);
 
 normed = abs(F/L); % normalize by length
 % Take first half of fft (amplitude)
@@ -60,10 +62,10 @@ F_shifted(1) = 0;
 save('for_plotting.mat')
 end
 
-function plotter(prom) 
+function plotter(prom,fname) 
     load('for_plotting.mat')
     figure(1)
-    sgtitle('Raw Data and Spectral Analysis','FontSize',16,'FontWeight','bold')
+    sgtitle(fname,'FontSize',16,'FontWeight','bold','Interpreter', 'none')
     subplot(1,2,1) % plot raw signal
     plot(t,[V1,V2])
     grid on
@@ -83,13 +85,16 @@ function plotter(prom)
     semilogx(fFreqs(locs),F_shifted(locs),'o') % plot peaks
     
     for i = 1:size(locs,1)
-        str_txt{i} = append(num2str(fFreqs(locs(i))),' Hz')
+        str_txt{i} = append(num2str(fFreqs(locs(i))),' Hz; ', num2str(F_shifted(locs(i))),' V')
         shift_text(i) = fFreqs(locs(i))/4 % adjusts text position given frequency location (can't be uniform)
     end
     text(fFreqs(locs)+shift_text',F_shifted(locs),str_txt)
 
     xlabel('Frequencies (Hz)')
-    ylabel('Amplitude (V)')
+    ylabel('Z-Axis Amplitude (V)')
     set(findall(gcf,'-property','FontSize'),'FontSize',14)
-    % xlim([0,500]) % can modify this if want better x-resolution
+    xlim([0,500]) % can modify this if want better x-resolution
+    set(gcf,'position',[0 100 1000 800])
+    savename = append(fname,".png");
+    saveas(gcf,savename)
 end
