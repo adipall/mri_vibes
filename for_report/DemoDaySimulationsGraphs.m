@@ -33,7 +33,36 @@ plot(model_OG(1,:), model_OG(2,:), 'r*-')
 plot(model_OP(1,:), model_OP(2,:), 'b*-')
 grid on
 xlim([0 60])
-legend('Model Without Resonator', 'Iteration-1 Resonator', 'Iteration-2 Resonator', 'interpreter', 'latex')
+legend('Model Without Resonator', 'Control Resonator', 'Optimized Resonator', 'interpreter', 'latex')
 xlabel('Applied Frequency (Hz)', 'interpreter', 'latex')
 ylabel({'Negative Z-Displacement at', 'Top Surface of Model (mm)'}, 'interpreter', 'latex')
-title({'Top Surface Displacement (mm) at Varying', 'Applied Frequencies: Three Models'}, 'interpreter', 'latex')
+%title({'Top Surface Displacement (mm) at Varying', 'Applied Frequencies: Three Models'}, 'interpreter', 'latex')
+
+
+%% Mass and Displacement
+
+
+NR_ave = mean(model_NR(2,:));
+OG_ave = mean(model_OG(2,:));
+OP_ave = mean(model_OP(2,:));
+
+dats = [0.1001 0.09250 0.0901;
+        NR_ave OP_ave OG_ave];
+%cf = fit(dats(1,:), dats(2,:), 'linear')
+    
+figure; clf
+plot(dats(1,:), dats(2,:), 'k:')
+hold on
+plot(0.1001, NR_ave, 'r*')
+plot(0.09250, OP_ave, 'b*')
+plot(0.0901, OG_ave, 'g*')
+legend('Negative Slope', 'Model without Resonator', 'Optimized Resonator', 'Control Resonator')
+xlabel('Model Mass (kg)', 'interpreter', 'latex')
+ylabel('Average Z-Axis Displacement', 'interpreter','latex')
+grid on
+
+
+
+
+
+
